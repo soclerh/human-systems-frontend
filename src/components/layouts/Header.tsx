@@ -70,7 +70,8 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="w-full relative transition-transform duration-300 z-50 py-3"
+      /* Increased z-index to ensure it stays above Hero components */
+      className="w-full relative transition-transform duration-300 z-[100] py-3"
     >
       <div className="flex items-center justify-between max-w-7xl mx-auto px-6">
         <Image
@@ -82,43 +83,45 @@ export default function Header() {
         />
 
         <nav className="hidden lg:flex items-center gap-10">
-          {navLinks.map((link, index) => (
-            <div key={index} className="relative group">
-              <Link
-                href={link.href}
-                className="flex items-center gap-1.5 font-semibold text-white/90 hover:text-[#E3FFCD] transition-colors py-4"
-              >
-                {link.name}
-                {link.dropdown && (
-                  <IoChevronDown
-                    size={14}
-                    className="transition-transform duration-300 group-hover:rotate-180 opacity-70"
-                  />
-                )}
-              </Link>
+          {/* Navigation Links commented out as requested 
+            
+            {navLinks.map((link, index) => (
+              <div key={index} className="relative group">
+                <Link
+                  href={link.href}
+                  className="flex items-center gap-1.5 font-semibold text-white/90 hover:text-[#E3FFCD] transition-colors py-4"
+                >
+                  {link.name}
+                  {link.dropdown && (
+                    <IoChevronDown
+                      size={14}
+                      className="transition-transform duration-300 group-hover:rotate-180 opacity-70"
+                    />
+                  )}
+                </Link>
 
-              {link.dropdown && (
-                /* Improved Dropdown Container */
-                <div className="absolute left-0 top-[90%] pt-4 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out z-[100]">
-                  <div className="flex flex-col bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-gray-100 min-w-[240px] p-2 overflow-hidden">
-                    {link.dropdown.map((item, i) => (
-                      <Link
-                        key={i}
-                        href={item.href}
-                        className="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-700 hover:text-[#013228] hover:bg-[#F9FBF8] transition-all"
-                      >
-                        <span className="font-medium">{item.name}</span>
-                        <IoIosArrowRoundForward
-                          className="opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-[#013228]"
-                          size={24}
-                        />
-                      </Link>
-                    ))}
+                {link.dropdown && (
+                  <div className="absolute left-0 top-[90%] pt-4 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out z-[100]">
+                    <div className="flex flex-col bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-gray-100 min-w-[240px] p-2 overflow-hidden">
+                      {link.dropdown.map((item, i) => (
+                        <Link
+                          key={i}
+                          href={item.href}
+                          className="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-700 hover:text-[#013228] hover:bg-[#F9FBF8] transition-all"
+                        >
+                          <span className="font-medium">{item.name}</span>
+                          <IoIosArrowRoundForward 
+                            className="opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-[#013228]" 
+                            size={24} 
+                          />
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
-          ))}
+                )}
+              </div>
+            ))}
+          */}
         </nav>
 
         <button className="flex items-center gap-2 bg-[#E3FFCD] rounded-full py-3 px-6 text-xs uppercase tracking-[0.1em] font-bold text-[#013228] hover:scale-105 transition-transform active:scale-95 shadow-lg shadow-[#000]/10">
