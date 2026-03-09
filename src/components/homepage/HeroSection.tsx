@@ -55,7 +55,7 @@ export default function HeroSection() {
       {/* Right Image - hidden below lg */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block rounded-l-2xl overflow-hidden">
         <Image
-          src="/dashboard-1.png"
+          src="/image3.png"
           alt="Hero Illustration"
           width={500}
           height={500}

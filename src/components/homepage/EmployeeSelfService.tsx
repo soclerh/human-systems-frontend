@@ -75,16 +75,16 @@ export default function EmployeeSelfService() {
             {/* Background Accent Shape */}
 
             {/* The "Floating" Browser Window */}
-            <div className="relative bg-white rounded-2xl  border border-gray-200 overflow-hidden">
+            <div className="relative overflow-hidden">
               {/* Browser Header */}
 
               {/* Image Container */}
-              <div className="bg-gray-50 aspect-4/4 relative">
+              <div className="bg-gray-50 h-screen relative">
                 <Image
-                  src="/dashboard-1.png"
+                  src="/image4.png"
                   alt="Employee Portal UI"
                   fill
-                  className="object-cover object-top p-2"
+                  className="object-cover object-top"
                 />
               </div>
             </div>
