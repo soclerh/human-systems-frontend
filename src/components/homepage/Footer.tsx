@@ -45,7 +45,7 @@ const Footer = () => {
       <div className="h-1 bg-gradient-to-r from-[#E3FFCD]/0 via-[#E3FFCD]/40 to-[#E3FFCD]/0" />
 
       {/* Newsletter banner */}
-      <div className="border-b border-emerald-800/30">
+      {/* <div className="border-b border-emerald-800/30">
         <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div>
             <h3 className="text-2xl font-extrabold mb-2">Stay in the Loop</h3>
@@ -66,7 +66,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main footer grid */}
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-12">

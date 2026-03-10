@@ -1,3 +1,4 @@
+import PageLoader from "@/components/shared/PageLoader";
 import EmployeeSelfService from "@/components/homepage/EmployeeSelfService";
 import Faq from "@/components/homepage/Faq";
 import HeroSection from "@/components/homepage/HeroSection";
@@ -10,6 +11,7 @@ import RecentBlogs from "@/components/homepage/RecentBlogs";
 export default function Home() {
   return (
     <div className="">
+      <PageLoader />
       <HeroSection />
       <OurModules />
       <EmployeeSelfService />

@@ -53,13 +53,13 @@ export default function HeroSection() {
       </div>
 
       {/* Right Image - hidden below lg */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block rounded-l-2xl overflow-hidden">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block translate-x-10 rounded-l-2xl overflow-hidden">
         <Image
           src="/image3.png"
           alt="Hero Illustration"
           width={500}
           height={500}
-          className="w-180 h-auto object-contain"
+          className="w-185 h-auto object-contain"
           priority
         />
       </div>

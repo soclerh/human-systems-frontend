@@ -59,9 +59,9 @@ export default function Header() {
       name: "Resources",
       href: "#",
       dropdown: [
-        { name: "Help Center", href: "/help" },
-        { name: "Community", href: "/community" },
-        { name: "Documentation", href: "/docs" }
+        { name: "HR Toolkit", href: "/resources/hr-toolkit" },
+        { name: "Use Cases", href: "/resources/use-cases" },
+        { name: "Compliance", href: "/resources/compliance" }
       ]
     },
     { name: "Contact Us", href: "/contact" },
@@ -122,7 +122,7 @@ export default function Header() {
         {/* Desktop CTA + Mobile toggle */}
         <div className="flex items-center gap-4">
           <Link href="/contact" className="hidden sm:block">
-            <button className="flex items-center gap-2 bg-[#E3FFCD] rounded-full py-3 px-6 text-xs uppercase tracking-[0.1em] font-bold text-[#013228] cursor-pointer hover:bg-[#d4ffb8] transition-colors group">
+            <button className="flex items-center gap-2 bg-white rounded-full py-3 px-6 text-xs uppercase tracking-[0.1em] font-bold text-[#013228] cursor-pointer hover:bg-[#d4ffb8] transition-colors group">
               Get Started
               <IoIosArrowRoundForward
                 size={24}
@@ -149,8 +149,8 @@ export default function Header() {
       {/* Mobile Menu Overlay */}
       <div
         className={`fixed inset-0 bg-[#013228] z-[99] transition-all duration-500 ease-in-out lg:hidden ${mobileOpen
-            ? "opacity-100 visible"
-            : "opacity-0 invisible pointer-events-none"
+          ? "opacity-100 visible"
+          : "opacity-0 invisible pointer-events-none"
           }`}
         style={{ top: 0 }}
       >
@@ -163,8 +163,8 @@ export default function Header() {
                   <button
                     onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
                     className={`flex items-center justify-between text-3xl font-bold text-white/90 hover:text-[#E3FFCD] transition-all duration-300 w-full text-left ${mobileOpen
-                        ? "translate-x-0 opacity-100"
-                        : "-translate-x-8 opacity-0"
+                      ? "translate-x-0 opacity-100"
+                      : "-translate-x-8 opacity-0"
                       }`}
                     style={{ transitionDelay: `${index * 75}ms` }}
                   >
@@ -187,8 +187,8 @@ export default function Header() {
                           setMobileDropdownOpen(false);
                         }}
                         className={`text-xl font-medium text-white/70 hover:text-[#E3FFCD] py-2 transition-colors ${mobileOpen
-                            ? "translate-x-0 opacity-100"
-                            : "-translate-x-4 opacity-0"
+                          ? "translate-x-0 opacity-100"
+                          : "-translate-x-4 opacity-0"
                           }`}
                         style={{ transitionDelay: `${index * 75 + (i + 1) * 75}ms` }}
                       >
@@ -203,8 +203,8 @@ export default function Header() {
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
                   className={`text-3xl font-bold text-white/90 hover:text-[#E3FFCD] transition-all duration-300 py-4 border-b border-white/5 ${mobileOpen
-                      ? "translate-x-0 opacity-100"
-                      : "-translate-x-8 opacity-0"
+                    ? "translate-x-0 opacity-100"
+                    : "-translate-x-8 opacity-0"
                     }`}
                   style={{ transitionDelay: `${index * 75}ms` }}
                 >
@@ -217,7 +217,7 @@ export default function Header() {
           {/* Mobile CTA */}
           <div className="pt-6 border-t border-white/10">
             <Link href="/contact" onClick={() => setMobileOpen(false)}>
-              <button className="group w-full flex items-center justify-center gap-2 bg-[#E3FFCD] rounded-2xl py-4 px-6 text-sm uppercase tracking-[0.1em] font-bold text-[#013228] hover:bg-[#013228] hover:text-[#E3FFCD] transition-all duration-300">
+              <button className="group w-full flex items-center justify-center gap-2 bg-white rounded-2xl py-4 px-6 text-sm uppercase tracking-[0.1em] font-bold text-[#013228] hover:bg-[#013228] hover:text-[#E3FFCD] transition-all duration-300">
                 Get Started
                 <IoIosArrowRoundForward
                   size={24}

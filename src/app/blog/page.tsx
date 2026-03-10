@@ -21,7 +21,7 @@ export default function BlogListingPage() {
         <div className="max-w-7xl mx-auto">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#005653] hover:text-[#01dc82] transition-colors mb-12 group"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-[#013228] transition-colors mb-12 group"
           >
             <ArrowLeft
               size={16}
@@ -31,13 +31,13 @@ export default function BlogListingPage() {
           </Link>
 
           <div className="max-w-3xl">
-            <span className="text-[#01dc82] font-bold tracking-widest text-xs uppercase block mb-4">
+            <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold border border-gray-200 rounded-full text-[#013228] uppercase tracking-widest bg-gray-50">
               Our Journal
             </span>
-            <h1 className="text-4xl md:text-6xl font-serif font-medium tracking-tight mb-6 text-[#005653]">
-              Insights on <span className="text-[#009b93]">Human Systems</span>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#013228]">
+              Insights on <span className="text-gray-500">Human Systems</span>
             </h1>
-            <p className="text-lg text-[#005653]/80 leading-relaxed">
+            <p className="text-lg text-gray-500 font-medium leading-relaxed">
               Thought leadership and practical guides for modern HR
               professionals and cultural architects.
             </p>
@@ -51,15 +51,15 @@ export default function BlogListingPage() {
           <div className="mb-24">
             <div className="group relative grid grid-cols-1 lg:grid-cols-12 gap-0 bg-white rounded-4xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500">
               <div className="lg:col-span-7 overflow-hidden">
-                <div className="aspect-[16/10] lg:h-full bg-white">
-                  <BlogCard blog={featuredBlog} />
+                <div className="aspect-16/10 lg:h-full bg-white">
+                  <BlogCard blog={featuredBlog} disableHoverEffect={true} />
                 </div>
               </div>
               <div className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center bg-white">
-                <span className="text-xs font-bold text-[#01dc82] uppercase tracking-widest mb-4">
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">
                   Featured Article
                 </span>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#005653] group-hover:text-[#009b93] transition-colors">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#013228] group-hover:text-[#85D036] transition-colors">
                   {featuredBlog.title}
                 </h2>
                 <p className="text-gray-600 mb-8 line-clamp-3">
@@ -68,7 +68,7 @@ export default function BlogListingPage() {
                 </p>
                 <Link
                   href={`/blog/${featuredBlog.slug}`}
-                  className="inline-flex items-center gap-2 font-bold text-sm uppercase tracking-wider group/link"
+                  className="inline-flex items-center gap-2 font-bold text-sm uppercase tracking-wider text-[#013228] group/link hover:text-[#85D036] transition-colors"
                 >
                   Read Article{" "}
                   <ChevronRight
@@ -83,8 +83,8 @@ export default function BlogListingPage() {
 
         {/* 3. Grid Header */}
         <div className="flex items-end justify-between mb-10 border-b border-gray-200 pb-6">
-          <h3 className="text-2xl font-bold text-[#005653]">Latest Updates</h3>
-          <span className="text-sm text-[#005653]/70 font-medium">
+          <h3 className="text-2xl font-bold text-[#013228]">Latest Updates</h3>
+          <span className="text-sm text-gray-500 font-bold uppercase tracking-wider">
             {remainingBlogs.length} Articles
           </span>
         </div>
