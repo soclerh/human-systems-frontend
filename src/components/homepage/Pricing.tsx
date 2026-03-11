@@ -1,54 +1,12 @@
 "use client";
-import { useState } from "react";
-import { Check } from "lucide-react";
+import React, { useState } from "react";
+import { HiCheck } from "react-icons/hi";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
-const pricingData = [
-  {
-    title: "Starter",
-    description: "For small teams getting started with modern HR management",
-    monthly: "9",
-    yearly: "7",
-    features: [
-      "Core HR & Employee Profiles",
-      "Leave & Absence Management",
-      "Employee Self-Service Portal",
-      "Document Management (HR Vault)",
-      "Up to 25 Employees",
-    ],
-  },
-  {
-    title: "Professional",
-    badge: "Most Popular",
-    description:
-      "For growing businesses needing full HR automation and payroll",
-    monthly: "19",
-    yearly: "15",
-    features: [
-      "All Starter Features",
-      "Performance Management & OKRs",
-      "Expense Management",
-      "Payroll Automation & Payslips",
-      "Up to 100 Employees",
-    ],
-  },
-  {
-    title: "Enterprise",
-    description:
-      "For large organizations requiring custom workflows and integrations",
-    monthly: "39",
-    yearly: "29",
-    features: [
-      "All Professional Features",
-      "Custom Workflows & Templates",
-      "Advanced Analytics & Reporting",
-      "API Access & Integrations",
-      "Unlimited Employees",
-    ],
-  },
-];
-
-export default function Pricing() {
+export default function Pricing({ pricingData }: any) {
   const [isAnnual, setIsAnnual] = useState(true);
+
+  if (!Array.isArray(pricingData) || pricingData.length === 0) return null;
 
   return (
     <div className="w-full min-h-screen bg-white">
@@ -56,19 +14,25 @@ export default function Pricing() {
         style={{ backgroundImage: `url("/pricing-bg-1.svg")` }}
         className="w-full bg-[#04231d] bg-cover bg-center rounded-t-[50px] min-h-screen py-20 px-6 text-white overflow-hidden"
       >
-        {/* --- Header Section --- */}
+        {/* Header Section */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold border border-emerald-500/20 rounded-full bg-emerald-950/40 text-emerald-400 uppercase tracking-widest">
-            Pricing Plans
+          <div className="flex flex-col items-center gap-4 md:gap-6">
+            {/* Fixed Badge Contrast */}
+            <div className="w-fit px-4 py-1.5 border border-emerald-500/30 bg-emerald-500/10 rounded-full">
+              <span className="text-xs font-bold uppercase tracking-widest text-emerald-400">
+                Pricing Plans
+              </span>
+            </div>
+            {/* Fixed Heading Contrast: Changed to white/emerald-50 */}
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              Choose Your Ideal HR Plan
+            </h2>
+            <p className="text-emerald-100/60 text-lg max-w-2xl mx-auto">
+              Flexible pricing tailored for businesses of all sizes — from
+              startups to enterprise. All plans include multi-tenant security
+              and GDPR compliance.
+            </p>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Choose Your Ideal HR Plan
-          </h2>
-          <p className="text-emerald-100/60 text-lg max-w-2xl mx-auto">
-            Flexible pricing tailored for businesses of all sizes — from
-            startups to enterprise. All plans include multi-tenant security and
-            GDPR compliance.
-          </p>
 
           {/* --- Toggle Switch --- */}
           <div className="flex items-center justify-center mt-12 gap-6">
@@ -101,61 +65,74 @@ export default function Pricing() {
         </div>
 
         {/* --- Pricing Cards Grid --- */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          {pricingData.map((plan, index) => (
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-12">
+          {pricingData.map((plan: any) => (
             <div
-              key={plan.title}
-              className="relative bg-[#0a2e26]/80 backdrop-blur-sm rounded-[32px] p-8 border border-emerald-800/30 flex flex-col transition-all duration-300 hover:scale-[1.02] hover:border-emerald-500/30"
+              key={plan.id || plan.title}
+              className={`relative bg-[#0a2e26]/80 backdrop-blur-md rounded-[32px] p-8 border transition-all duration-300 hover:scale-[1.02] flex flex-col ${
+                plan.highlight
+                  ? "border-emerald-400/50 shadow-2xl shadow-emerald-900/20"
+                  : "border-emerald-800/30"
+              }`}
             >
               {/* Badge Ribbon */}
               {plan.badge && (
-                <div className="absolute top-6 right-0 bg-[#d1e5c4] text-[#04231d] text-[10px] font-black px-4 py-1.5 rounded-l-md shadow-lg">
+                <div className="absolute top-6 right-0 bg-[#d1e5c4] text-[#04231d] text-[10px] font-black px-4 py-1.5 rounded-l-md shadow-lg z-10">
                   {plan.badge.toUpperCase()}
                   <div className="absolute right-0 top-full w-0 h-0 border-t-[4px] border-t-[#a7bc9b] border-r-[4px] border-r-transparent"></div>
                 </div>
               )}
 
-              <h3 className="text-2xl font-bold mb-4">{plan.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">
+                {plan.title}
+              </h3>
 
               <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-6xl font-bold tracking-tighter">
+                <span className="text-6xl font-bold tracking-tighter text-white">
                   ${isAnnual ? plan.yearly : plan.monthly}
                 </span>
-                <span className="text-emerald-100/60 text-sm font-medium">
-                  Per Employee/Month
-                </span>
+                {plan.title !== "Enterprise" && (
+                  <span className="text-sm text-emerald-100/50">
+                    / Per Employee/Month
+                  </span>
+                )}
               </div>
 
-              <p className="text-emerald-100/70 text-sm mb-8 leading-relaxed">
+              <p className="text-emerald-100/70 text-sm mb-8 leading-relaxed min-h-[40px]">
                 {plan.description}
               </p>
 
               <div className="h-px bg-emerald-800/40 mb-8" />
 
               <div className="flex-grow">
-                <h4 className="font-bold text-sm uppercase tracking-[0.2em] mb-6 text-emerald-50">
+                <h4 className="font-bold text-sm uppercase tracking-[0.2em] mb-6 text-white">
                   Core Features
                 </h4>
                 <ul className="space-y-4 mb-10">
-                  {plan.features.map((feature, idx) => (
+                  {plan.features.map((feature: any) => (
                     <li
-                      key={idx}
-                      className="flex items-start gap-3 text-emerald-100/50 text-sm leading-snug"
+                      key={feature.id || feature.text}
+                      className="flex items-start gap-3 text-emerald-50 text-sm leading-snug"
                     >
-                      <Check
-                        size={16}
-                        className="text-emerald-500 mt-0.5 shrink-0"
+                      <HiCheck
+                        size={18}
+                        className="text-emerald-400 mt-0.5 shrink-0"
                       />
-                      {feature}
+                      {feature.text}
                     </li>
                   ))}
                 </ul>
               </div>
 
               <button
-                className={`w-full py-4 rounded-full font-bold text-xs tracking-widest transition-all duration-300 bg-[#163b34] text-white border border-emerald-700/50 hover:bg-[#c1d5b4] hover:text-[#04231d] hover:border-transparent cursor-pointer `}
+                className={`w-full group py-4 px-6 rounded-full font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 transition-all ${
+                  plan.highlight
+                    ? "bg-[#d1e5c4] text-[#04231d] hover:bg-white"
+                    : "bg-transparent text-white border border-emerald-700 hover:bg-[#d1e5c4] hover:text-[#04231d] cursor-pointer"
+                }`}
               >
                 GET STARTED
+                <HiOutlineArrowNarrowRight className="text-xl group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
           ))}

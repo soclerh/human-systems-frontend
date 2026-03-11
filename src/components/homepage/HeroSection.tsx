@@ -23,9 +23,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-base md:text-lg text-gray-400 max-w-md lg:max-w-xl">
-            Human Systems empowers businesses with a scalable, secure, and
-            modular HR platform from employee management and leave tracking to
-            payroll, performance reviews, and beyond.
+            Human Systems empowers businesses with a scalable, secure, and modular HR platform from employee management and leave tracking to payroll, performance reviews, and beyond.
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-5 w-full sm:w-auto">

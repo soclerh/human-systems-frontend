@@ -72,7 +72,7 @@ export default function Header() {
       ref={headerRef}
       className="w-full relative transition-transform duration-300 z-[100] py-3"
     >
-      <div className="flex items-center justify-between max-w-344 mx-auto px-6">
+      <div className="flex items-center justify-between max-w-7xl mx-auto px-6">
         {/* Logo */}
         <Link href="/" onClick={() => setMobileOpen(false)}>
           <Image

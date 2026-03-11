@@ -1,7 +1,5 @@
-"use client";
-
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import BlogCard from "@/components/blog/BlogCard";
 import { getRecentBlogs } from "@/data/blogs";
 
@@ -11,26 +9,29 @@ export default function RecentBlogs() {
   return (
     <section className="relative w-full py-24 px-6 md:px-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
-          <div className="max-w-xl">
-            <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold border border-gray-200 rounded-full text-[#013228] uppercase tracking-widest bg-gray-50">
-              Latest Insights
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="h-px w-6 bg-[#013228]" />
+              <span className="text-sm font-bold uppercase tracking-widest text-[#013228]">
+                Latest Insights
+              </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#013228] leading-tight">
-              Read Our <br />
-              <span className="text-gray-500">Latest Blogs</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-[#013228] leading-tight">
+              Read Our <br className="hidden md:block" /> Latest Blogs
             </h2>
           </div>
 
-          <Link href="/blog">
-            <button className="group flex items-center justify-center gap-2 border border-[#013228] rounded-full py-4 px-8 text-xs uppercase tracking-widest font-bold text-[#013228] hover:bg-[#013228] cursor-pointer hover:text-white transition-all">
-              VIEW ALL POSTS
-              <ArrowRight
-                size={16}
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              />
-            </button>
+          <Link
+            href="/blog"
+            className="group inline-flex items-center gap-2 text-sm font-bold text-[#013228] uppercase tracking-widest hover:text-emerald-700 transition-colors"
+          >
+            VIEW ALL POSTS
+            <HiOutlineArrowNarrowRight
+              size={16}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
           </Link>
         </div>
 

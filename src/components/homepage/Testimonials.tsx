@@ -13,41 +13,40 @@ interface Testimonial {
   content: string;
 }
 
-const testimonials: Testimonial[] = [
-  {
-    img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600",
-    role: "HR Director",
-    name: "Sophie Laurent",
-    company: "TechFlow Systems",
-    content: "Human Systems has completely transformed how we manage our HR operations. The leave management is seamless.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=600",
-    role: "Operations Manager",
-    name: "Marc Dubois",
-    company: "Global Logistics",
-    content: "The employee self-service portal has dramatically reduced our HR team's workload. Highly recommended.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600",
-    role: "CEO",
-    name: "Thomas Wright",
-    company: "Innovate Ltd",
-    content: "Payroll automation used to be a nightmare. Now it's a single click. A game changer for our finance team.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600",
-    role: "Product Lead",
-    name: "Elena Rodriguez",
-    company: "Creative Pulse",
-    content: "The interface is so intuitive that our employees didn't even need training. Best HR software we've used.",
-  },
-];
-
-// Triple the array to ensure we always have content to show during the jump
-const extendedTestimonials = [...testimonials, ...testimonials, ...testimonials];
-
 export default function InfiniteTestimonials() {
+  const testimonials: Testimonial[] = [
+    {
+      img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600",
+      role: "HR Director",
+      name: "Sophie Laurent",
+      company: "TechFlow Systems",
+      content: "Human Systems has completely transformed how we manage our HR operations. The leave management is seamless.",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=600",
+      role: "Operations Manager",
+      name: "Marc Dubois",
+      company: "Global Logistics",
+      content: "The employee self-service portal has dramatically reduced our HR team's workload. Highly recommended.",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600",
+      role: "CEO",
+      name: "Thomas Wright",
+      company: "Innovate Ltd",
+      content: "Payroll automation used to be a nightmare. Now it's a single click. A game changer for our finance team.",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600",
+      role: "Product Lead",
+      name: "Elena Rodriguez",
+      company: "Creative Pulse",
+      content: "The interface is so intuitive that our employees didn't even need training. Best HR software we've used.",
+    },
+  ];
+
+  // Triple the array to ensure we always have content to show during the jump
+  const extendedTestimonials = [...testimonials, ...testimonials, ...testimonials];
   const [currentIndex, setCurrentIndex] = useState(testimonials.length);
   const [visibleCards, setVisibleCards] = useState(3);
   const [isPaused, setIsPaused] = useState(false);
@@ -179,4 +178,4 @@ export default function InfiniteTestimonials() {
       </div>
     </section>
   );
-}
+}

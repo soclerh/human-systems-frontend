@@ -9,7 +9,6 @@ import {
   MapPin,
   Mail,
   Phone,
-  ArrowRight,
 } from "lucide-react";
 
 const Footer = () => {
@@ -24,49 +23,24 @@ const Footer = () => {
 
   const platformLinks = [
     { name: "About Us", href: "/about" },
-    { name: "Modules", href: "/modules" },
     { name: "Pricing", href: "/pricing" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const moduleLinks = [
     { name: "Core HR", href: "/modules/core-hr" },
     { name: "Leave Management", href: "/modules/leave-management" },
-    { name: "HR Vault", href: "/modules/document-management" },
+    { name: "Document Management", href: "/modules/document-management" },
     { name: "Performance", href: "/modules/performance-management" },
     { name: "Payroll", href: "/modules/payroll-management" },
-    { name: "Expenses", href: "/modules/expense-management" },
+    { name: "Expense", href: "/modules/expense-management" },
   ];
 
   return (
     <footer className="w-full bg-[#013228] text-white relative overflow-hidden">
       {/* Top decorative bar */}
       <div className="h-1 bg-gradient-to-r from-[#E3FFCD]/0 via-[#E3FFCD]/40 to-[#E3FFCD]/0" />
-
-      {/* Newsletter banner */}
-      {/* <div className="border-b border-emerald-800/30">
-        <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center justify-between gap-8">
-          <div>
-            <h3 className="text-2xl font-extrabold mb-2">Stay in the Loop</h3>
-            <p className="text-emerald-100/50 text-sm max-w-md">
-              Get product updates, HR insights, and tips delivered to your
-              inbox. No spam, ever.
-            </p>
-          </div>
-          <div className="flex w-full lg:w-auto gap-3">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 lg:w-80 px-5 py-3.5 rounded-2xl bg-white/5 border border-emerald-800/40 text-sm text-white placeholder:text-emerald-100/30 focus:outline-none focus:ring-2 focus:ring-[#E3FFCD]/30 focus:border-transparent transition-all"
-            />
-            <button className="flex items-center gap-2 bg-[#E3FFCD] text-[#013228] px-6 py-3.5 rounded-2xl font-bold text-sm hover:scale-105 transition-transform shrink-0">
-              Subscribe
-              <ArrowRight size={16} />
-            </button>
-          </div>
-        </div>
-      </div> */}
 
       {/* Main footer grid */}
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-12">
@@ -84,8 +58,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-emerald-100/50 leading-relaxed text-sm max-w-xs">
-              Empowering businesses with a scalable, secure, and modular HR
-              platform — from employee management to payroll and beyond.
+              Empowering businesses with a scalable, secure, and modular HR platform — from employee management to payroll and beyond.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (

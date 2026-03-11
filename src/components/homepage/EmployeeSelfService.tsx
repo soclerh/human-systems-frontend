@@ -22,9 +22,7 @@ export default function EmployeeSelfService() {
                 <span className="text-[#013228]">in one place.</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                Streamline your HR workflow. Give employees the autonomy to
-                manage their documentation, view benefits, and stay connected
-                with the entire team—zero admin intervention required.
+                Streamline your HR workflow. Give employees the autonomy to manage their documentation, view benefits, and stay connected with the entire team—zero admin intervention required.
               </p>
             </div>
 
@@ -41,8 +39,7 @@ export default function EmployeeSelfService() {
                   Unified Profile & Payslips
                 </h3>
                 <p className="text-gray-500 leading-relaxed">
-                  A secure vault for all personal documents. Employees can
-                  instantly download tax forms and payslip history.
+                  A secure vault for all personal documents. Employees can instantly download tax forms and payslip history.
                 </p>
               </div>
 
@@ -52,8 +49,7 @@ export default function EmployeeSelfService() {
                   Interactive Org Directory
                 </h3>
                 <p className="text-gray-500 leading-relaxed">
-                  Visualize your entire team structure. Search by department,
-                  role, or name to find exactly who you're looking for.
+                  Visualize your entire team structure. Search by department, role, or name to find exactly who you're looking for.
                 </p>
               </div>
             </div>
