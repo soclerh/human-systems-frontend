@@ -83,40 +83,34 @@ const ModuleCard = ({ module }: { module: Module }) => (
 );
 
 export default function ModuleGrid() {
-  const functionalModules = modules.filter((m) => m.category === "functional");
-  const platformModules = modules.filter((m) => m.category === "platform");
-
   return (
-    <>
-      {/* Functional Modules */}
-      <section className="py-20 px-6 bg-[#FCFDFB]">
-        <div className="max-w-[85rem] mx-auto">
-          <div className="flex flex-col items-center text-center mb-16">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-[#013228]" />
-              <span className="text-sm font-bold uppercase tracking-widest text-[#013228]">
-                Functional Modules
-              </span>
-              <div className="h-px w-8 bg-[#013228]" />
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Core HR Modules
-            </h2>
-            <p className="max-w-2xl text-gray-500 text-lg leading-relaxed">
-              7 powerful modules covering every aspect of HR management — from
-              employee records to payroll processing.
-            </p>
+    <section className="py-20 px-6 bg-[#FCFDFB]">
+      <div className="max-w-[85rem] mx-auto">
+        <div className="flex flex-col items-center text-center mb-16">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-px w-8 bg-[#013228]" />
+            <span className="text-sm font-bold uppercase tracking-widest text-[#013228]">
+              All Modules
+            </span>
+            <div className="h-px w-8 bg-[#013228]" />
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {functionalModules.map((module) => (
-              <ModuleCard key={module.slug} module={module} />
-            ))}
-          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Core HR & Platform Modules
+          </h2>
+          <p className="max-w-2xl text-gray-500 text-lg leading-relaxed">
+            {modules.length} powerful modules covering every aspect of HR
+            management — from employee records and payroll processing to
+            platform administration.
+          </p>
         </div>
-      </section>
 
-      {/* Platform Administration Modules */}
-    </>
+        {/* Yahan saare 9 modules ek hi grid mein aayenge */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {modules.map((module) => (
+            <ModuleCard key={module.slug} module={module} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

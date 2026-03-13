@@ -14,8 +14,6 @@ const SharedCta = () => (
           fill
           className="object-cover opacity-30 grayscale group-hover:scale-105 transition-transform duration-700"
         />
-        {/* Subtle gradient to ensure the center text pop */}
-        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#E3FFCD]/70 via-transparent to-[#E3FFCD]/70" /> */}
       </div>
 
       {/* --- Content --- */}
@@ -25,8 +23,9 @@ const SharedCta = () => (
         </h2>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/contact">
-            <button className="group/btn w-full cursor-pointer sm:w-auto bg-[#013228] text-[#E3FFCD] px-10 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-[#013228]/20 transition-all flex items-center justify-center gap-2">
+          {/* FIX: Added className="w-full sm:w-auto" to Link */}
+          <Link href="/contact" className="w-full sm:w-auto">
+            <button className="group/btn w-full cursor-pointer bg-[#013228] text-[#E3FFCD] px-8 py-5 lg:px-10 lg:py-4 rounded-2xl font-bold lg:text-lg text-md hover:shadow-2xl hover:shadow-[#013228]/20 transition-all flex items-center justify-center gap-2">
               Get Started Now
               <ArrowRight
                 size={20}
@@ -35,15 +34,16 @@ const SharedCta = () => (
             </button>
           </Link>
 
-          <Link href="/contact">
-            <button className="w-full cursor-pointer sm:w-auto border-2 border-[#013228] text-[#013228] px-10 py-4 rounded-2xl font-bold text-lg hover:bg-[#013228] hover:text-[#E3FFCD] transition-all bg-white/20 backdrop-blur-sm">
+          {/* FIX: Added className="w-full sm:w-auto" to Link */}
+          <Link href="/contact" className="w-full sm:w-auto">
+            <button className="w-full cursor-pointer border-2 border-[#013228] text-[#013228] px-10 py-4 rounded-2xl font-bold text-lg hover:bg-[#013228] hover:text-[#E3FFCD] transition-all bg-white/20 backdrop-blur-sm">
               Contact Sales
             </button>
           </Link>
         </div>
       </div>
 
-      {/* Decorative shapes (kept them but lowered opacity so they don't fight the image) */}
+      {/* Decorative shapes */}
       <div className="absolute top-0 left-0 w-32 h-32 bg-[#013228]/5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#013228]/5 rounded-full translate-x-1/3 translate-y-1/3"></div>
     </div>

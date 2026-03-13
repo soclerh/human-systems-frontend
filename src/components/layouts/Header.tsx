@@ -32,14 +32,24 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [mobileOpen]);
 
+  // UPDATED: Added logic to reset mobile dropdown state when mobile menu closes
   useEffect(() => {
+    // TypeScript ko batane ke liye ki ye setTimeout ka timer hai
+    let timer: ReturnType<typeof setTimeout>;
+
     if (mobileOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
+      // Reset dropdown with a delay to let the menu closing animation finish
+      timer = setTimeout(() => {
+        setMobileDropdownOpen(false);
+      }, 500);
     }
+
     return () => {
       document.body.style.overflow = "";
+      if (timer) clearTimeout(timer);
     };
   }, [mobileOpen]);
 
