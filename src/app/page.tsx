@@ -26,6 +26,7 @@ export default async function Home() {
       <Pricing pricingData={pricingData?.cards || []} />
       <Faq />
       <RecentBlogs />
+      {/* hello world */}
     </div>
   );
 }
