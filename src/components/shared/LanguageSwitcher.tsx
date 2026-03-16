@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HiOutlineTranslate } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
 import Script from "next/script";
@@ -15,6 +15,7 @@ declare global {
 const LanguageSwitcher = () => {
   const [currentLang, setCurrentLang] = useState("en");
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Initialize language from cookie if exists
@@ -38,6 +39,26 @@ const LanguageSwitcher = () => {
         );
       }
     };
+
+    // MutationObserver to remove the bar as soon as it's added
+    const observer = new MutationObserver(() => {
+      const bar = document.querySelector(".goog-te-banner-frame") as HTMLElement;
+      if (bar) {
+        bar.style.display = "none";
+        bar.style.visibility = "hidden";
+      }
+      if (document.body.style.top !== "0px") {
+        document.body.style.top = "0px";
+      }
+    });
+
+    observer.observe(document.body, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   const changeLanguage = (langCode: string) => {
@@ -61,13 +82,32 @@ const LanguageSwitcher = () => {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
   const languages = [
     { code: "en", name: "English", flag: "🇺🇸" },
     { code: "fr", name: "Français", flag: "🇫🇷" },
   ];
 
   return (
-    <div className="relative">
+    <div className="relative" ref={dropdownRef}>
       <Script
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
         strategy="afterInteractive"
@@ -86,49 +126,23 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <>
-          <div 
-            className="fixed inset-0 z-[110]" 
-            onClick={() => setIsOpen(false)}
-          ></div>
-          <div className="absolute top-12 right-0 w-32 bg-white rounded-xl shadow-2xl z-[111] overflow-hidden border border-gray-100 animate-in fade-in zoom-in duration-200">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                onClick={() => changeLanguage(lang.code)}
-                className={`w-full flex items-center justify-between px-4 py-3 text-sm transition-colors hover:bg-gray-50 ${
-                  currentLang === lang.code ? "text-[#013228] font-bold bg-[#E3FFCD]/20" : "text-gray-600"
-                }`}
-              >
-                <span>{lang.name}</span>
-                <span>{lang.flag}</span>
-              </button>
-            ))}
-          </div>
-        </>
+        <div className="absolute top-12 right-0 w-32 bg-white rounded-xl shadow-2xl z-[111] overflow-hidden border border-gray-100 animate-in fade-in zoom-in duration-200">
+          {languages.map((lang) => (
+            <button
+              key={lang.code}
+              onClick={() => changeLanguage(lang.code)}
+              className={`w-full flex items-center justify-between px-4 py-3 text-sm transition-colors hover:bg-gray-50 ${
+                currentLang === lang.code ? "text-[#013228] font-bold bg-[#E3FFCD]/20" : "text-gray-600"
+              }`}
+            >
+              <span>{lang.name}</span>
+              <span>{lang.flag}</span>
+            </button>
+          ))}
+        </div>
       )}
 
-      <style jsx global>{`
-        .goog-te-banner-frame, 
-        .goog-te-banner,
-        .goog-te-balloon-frame,
-        #goog-gt-tt,
-        .goog-te-balloon-frame {
-          display: none !important;
-        }
-        body {
-          top: 0 !important;
-        }
-        .goog-logo-link {
-          display: none !important;
-        }
-        .trans-section {
-          display: none !important;
-        }
-        .goog-te-gadget {
-          font-size: 0 !important;
-        }
-      `}</style>
+
     </div>
   );
 };
