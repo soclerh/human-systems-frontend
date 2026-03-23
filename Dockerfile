@@ -1,7 +1,7 @@
 # ==========================================
-# 1. Base Image
+# 1. Base Image (Updated to Node 20)
 # ==========================================
-FROM node:18-alpine AS base
+FROM node:20-alpine AS base
 
 # ==========================================
 # 2. Dependencies Stage
