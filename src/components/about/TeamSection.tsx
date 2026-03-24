@@ -5,7 +5,7 @@ const TeamSection = () => {
     {
       name: "Parfait MOUTSINGA",
       role: "Founder & CEO",
-      img: "/one.png",
+      img: "/six.jpeg",
     },
     {
       name: "Mathilde ZOBA",
