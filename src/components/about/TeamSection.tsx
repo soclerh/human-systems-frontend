@@ -18,7 +18,7 @@ const TeamSection = () => {
       img: "/three.png",
     },
     {
-      name: "CTO",
+      name: "Morane MANUBIN",
       role: "CTO",
       img: "/four.png",
     },
