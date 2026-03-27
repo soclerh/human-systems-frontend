@@ -11,7 +11,7 @@ export default async function ResourceDetailPage({
     const { slug } = await params;
     const resource = getResourceBySlug(slug);
 
-    if (!resource || resource.category !== "HR Toolkit") notFound();
+    if (!resource || resource.category !== "AI Toolkit") notFound();
 
     return (
         <main className="min-h-screen bg-white">
