@@ -10,7 +10,7 @@ const TeamSection = () => {
     {
       name: "Mathilde ZOBA",
       role: "Head of AI Strategy",
-      img: "two.png",
+      img: "/two.png",
     },
     {
       name: "Pascal Aumont",
