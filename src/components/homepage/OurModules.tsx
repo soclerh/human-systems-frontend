@@ -13,39 +13,39 @@ import {
 export default function OurModules() {
   const modules = [
     {
-      title: "Core HR & Employee Admin",
+      title: "AI Agent Builder",
       description:
-        "Centralized employee profiles, contract management with versioning, automated probation alerts, and customizable onboarding & offboarding checklists.",
+        "Design, train, and deploy custom AI agents with a visual drag-and-drop interface, pre-built templates, and real-time performance monitoring.",
       icon: <HiOutlineUserGroup size={32} />,
     },
     {
-      title: "Leave & Absence Management",
+      title: "Workflow Automator",
       description:
-        "Customizable leave policies, automated accruals, multi-step approval workflows, shared team calendars, and real-time leave balance reporting.",
+        "Build intelligent automation workflows with AI-powered conditional branching, event triggers, parallel execution, and comprehensive audit logging.",
       icon: <HiOutlineCalendar size={32} />,
     },
     {
-      title: "Document Management (HR Vault)",
+      title: "Knowledge Vault",
       description:
-        "Secure, permission-based document repository with categorization, role-based access control, and automated expiration alerts for work permits and certifications.",
+        "AI-powered knowledge base with semantic search, automatic document indexing, role-based access control, and dynamic knowledge graph visualization.",
       icon: <HiOutlineShieldCheck size={32} />,
     },
     {
-      title: "Performance Management",
+      title: "Predictive Analytics",
       description:
-        "Goal setting & tracking with OKRs/KPIs, cascading goals from company to individual, performance review cycles, and self-assessment forms.",
+        "ML-powered forecasting with time series analysis, churn prediction, what-if scenario modeling, and automated model retraining pipelines.",
       icon: <HiOutlineChartBar size={32} />,
     },
     {
-      title: "Payroll Management",
+      title: "Model Training Studio",
       description:
-        "Automated payroll runs with salary structure configuration, tax and deduction management, payslip generation, distribution, and compliance reporting.",
+        "End-to-end ML lifecycle management with experiment tracking, hyperparameter optimization, model versioning, and one-click production deployment.",
       icon: <HiOutlineCurrencyDollar size={32} />,
     },
     {
-      title: "Expense Management",
+      title: "Data Pipeline Manager",
       description:
-        "Streamlined expense claim submission with digital receipt upload, customizable expense categories, and multi-level approval workflows with analytics.",
+        "Visual ETL pipeline builder with 100+ pre-built connectors, AI-assisted data transformation, real-time streaming, and data quality monitoring.",
       icon: <HiOutlineClipboardList size={32} />,
     },
   ];
@@ -57,16 +57,16 @@ export default function OurModules() {
         <div className="flex flex-col items-center text-center mb-16">
           <div className="w-fit px-6 py-1.5 border border-gray-900 rounded-full mb-6">
             <span className="text-sm font-semibold uppercase tracking-widest">
-              Our Modules
+              Our Products
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Comprehensive HR Modules
+            Powerful AI Products
           </h2>
           <p className="max-w-2xl text-gray-500 text-lg leading-relaxed">
-            Human Systems provides a complete suite of HR modules built with
-            multi-tenant architecture, robust security, and role-based access
-            controls.
+            NeuralOps provides a complete suite of AI products built with
+            enterprise-grade infrastructure, robust security, and scalable
+            multi-tenant architecture.
           </p>
         </div>
 

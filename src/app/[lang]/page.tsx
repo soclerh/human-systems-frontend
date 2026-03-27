@@ -9,7 +9,13 @@ import Testimonials from "@/components/homepage/Testimonials";
 import RecentBlogs from "@/components/homepage/RecentBlogs";
 import { staticPricingData } from "@/data/staticPricing";
 
-export default async function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  
   return (
     <div className="">
       <PageLoader />

@@ -2,8 +2,9 @@ import { fetchAPI } from "@/utils/fetch-api";
 import { getStrapiURL } from "@/utils/get-strapi-url";
 import qs from "qs";
 
-const PageQuery = (slug: string) =>
+const PageQuery = (slug: string, locale: string) =>
   qs.stringify({
+    locale: locale,
     filters: { slug: { $eq: slug } },
     populate: {
       blocks: {
@@ -22,9 +23,9 @@ const PageQuery = (slug: string) =>
     },
   });
 
-export async function getPageData(slug: string) {
+export async function getPageData(slug: string, locale: string = "en") {
   const BASE_URL = getStrapiURL();
-  const query = PageQuery(slug);
+  const query = PageQuery(slug, locale);
   const url = `${BASE_URL}/api/pages?${query}`;
   return await fetchAPI(url, {
     method: "GET",

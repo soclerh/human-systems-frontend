@@ -15,15 +15,15 @@ export default function HeroSection() {
         {/* Left Content */}
         <div className="flex items-start flex-col gap-5 md:gap-8 max-w-full sm:max-w-lg lg:max-w-xl relative z-10">
           <div className="w-fit px-3 md:px-4 py-1 border border-gray-900 rounded-full">
-            <p className="text-sm md:text-lg">Streamline Your HR Operations</p>
+            <p className="text-sm md:text-lg">Supercharge Your AI Operations</p>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight font-bold text-gray-900">
-            The All-in-One HR SaaS Platform
+            The All-in-One AI Operations Platform
           </h1>
 
           <p className="text-base md:text-lg text-gray-400 max-w-md lg:max-w-xl">
-            Human Systems empowers businesses with a scalable, secure, and modular HR platform from employee management and leave tracking to payroll, performance reviews, and beyond.
+            NeuralOps empowers businesses with a scalable, secure, and modular AI platform — from intelligent agents and workflow automation to predictive analytics, model training, and beyond.
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-5 w-full sm:w-auto">

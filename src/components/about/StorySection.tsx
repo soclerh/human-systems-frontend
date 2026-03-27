@@ -18,7 +18,7 @@ const StorySection = () => (
           <div className="absolute -bottom-6 -right-6 bg-[#013228] p-8 rounded-3xl text-[#E3FFCD] shadow-xl hidden md:block">
             <p className="text-4xl font-bold">10+</p>
             <p className="text-xs uppercase tracking-widest font-bold opacity-80">
-              Years of Innovation
+              Years of AI Innovation
             </p>
           </div>
         </div>
@@ -31,24 +31,24 @@ const StorySection = () => (
             </span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
-            From a spreadsheet to a{" "}
-            <span className="text-[#013228]">global platform.</span>
+            From a notebook to a{" "}
+            <span className="text-[#013228]">global AI platform.</span>
           </h2>
           <p className="text-lg text-gray-500 leading-relaxed">
-            What started as a custom tool for a small team in Berlin has evolved
-            into a comprehensive HR ecosystem trusted by hundreds of
-            organizations worldwide. We noticed that existing HR software was
-            too rigid and disconnected from the actual needs of employees.
+            What started as a custom ML tool for a small research team has evolved
+            into a comprehensive AI operations platform trusted by hundreds of
+            organizations worldwide. We noticed that existing AI tooling was
+            too fragmented and disconnected from the actual needs of business teams.
           </p>
           <p className="text-lg text-gray-500 leading-relaxed">
-            Our mission is to provide an all-in-one workspace where HR teams can
-            manage everything from payroll to performance with precision, while
-            employees enjoy a seamless, modern interface.
+            Our mission is to provide an all-in-one workspace where teams can
+            build AI agents, automate workflows, and deploy models with precision, while
+            business users enjoy a seamless, intuitive interface.
           </p>
           <div className="pt-4">
             <Link href="/contact">
               <button className="flex cursor-pointer items-center gap-2 bg-[#013228] rounded-full py-4 px-8 font-bold text-[#E3FFCD] hover:scale-105 transition-transform duration-300">
-                Join our Journey
+                Join our AI Journey
                 <ArrowRight size={20} />
               </button>
             </Link>

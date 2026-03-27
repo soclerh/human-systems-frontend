@@ -26,12 +26,12 @@ export default function Pricing({ pricingData }: any) {
             </div>
             {/* Fixed Heading Contrast: Changed to white/emerald-50 */}
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              Choose Your Ideal HR Plan
+              Choose Your Ideal AI Plan
             </h2>
             <p className="text-emerald-100/60 text-lg max-w-2xl mx-auto">
-              Flexible pricing tailored for businesses of all sizes — from
+              Flexible pricing tailored for teams of all sizes — from
               startups to enterprise. All plans include multi-tenant security
-              and GDPR compliance.
+              and SOC 2 compliance.
             </p>
           </div>
 
@@ -94,7 +94,7 @@ export default function Pricing({ pricingData }: any) {
                 </span>
                 {plan.title !== "Enterprise" && (
                   <span className="text-sm text-emerald-100/50">
-                    / Per Employee/Month
+                    / Per Seat/Month
                   </span>
                 )}
               </div>

@@ -9,17 +9,17 @@ const TeamSection = () => {
     },
     {
       name: "Mathilde ZOBA",
-      role: "Business Developer",
+      role: "Head of AI Strategy",
       img: "two.png",
     },
     {
       name: "Pascal Aumont",
-      role: "Global Account Manager",
+      role: "VP of Enterprise Solutions",
       img: "/seven.jpeg",
     },
     {
       name: "Morane MANUBIN",
-      role: "Customer Success",
+      role: "Customer Success Lead",
       img: "/four.png",
     },
   ];
@@ -41,7 +41,7 @@ const TeamSection = () => {
           </div>
           <p className="text-gray-500 max-w-sm">
             A diverse group of thinkers and makers dedicated to building the
-            future of HR.
+            future of AI.
           </p>
         </div>
 

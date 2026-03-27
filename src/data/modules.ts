@@ -23,68 +23,68 @@ export interface Module {
 
 export const modules: Module[] = [
     {
-        slug: "core-hr",
+        slug: "ai-agent-builder",
         moduleNumber: 1,
-        title: "Core HR & Employee Administration",
-        shortTitle: "Core HR",
+        title: "AI Agent Builder & Orchestration",
+        shortTitle: "AI Agents",
         objective:
-            "To establish a centralized and secure database for managing all employee information, contracts, and lifecycle events.",
+            "To provide an intuitive environment for designing, training, and deploying custom AI agents tailored to specific business workflows.",
         description:
-            "Centralized employee profiles, contract management with versioning, automated probation alerts, and customizable onboarding & offboarding checklists.",
+            "Drag-and-drop agent designer, pre-built agent templates, multi-step reasoning chains, automated fine-tuning, and real-time agent performance monitoring.",
         features: [
-            "Employee Profile Management (Create, Edit, Deactivate)",
-            "Customizable Profile Fields",
-            "Contract Management & Versioning",
-            "Automated Contract & Probation Alerts",
-            "Onboarding & Offboarding Checklist Management",
+            "Visual Agent Designer (Drag & Drop)",
+            "Pre-Built Agent Templates Library",
+            "Multi-Step Reasoning Chain Builder",
+            "Automated Fine-Tuning Pipelines",
+            "Agent Performance Monitoring & Analytics",
         ],
         featureGroups: [
             {
-                groupName: "Employee Profiles",
+                groupName: "Agent Design",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "AI Engineer",
                         story:
-                            "I can create, view, edit, and deactivate employee profiles.",
+                            "I can design custom AI agents using a visual drag-and-drop interface.",
                     },
                     {
-                        role: "HR Admin",
+                        role: "AI Engineer",
                         story:
-                            "I can define custom fields for employee profiles (e.g., T-shirt size, dietary restrictions).",
+                            "I can define custom reasoning chains and tool integrations for each agent.",
                     },
                     {
-                        role: "Employee",
-                        story: "I can view my own profile information.",
+                        role: "Business User",
+                        story: "I can browse and deploy pre-built agent templates for common tasks.",
                     },
                 ],
             },
             {
-                groupName: "Contract Management",
+                groupName: "Agent Training",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "ML Engineer",
                         story:
-                            "I can upload and manage multiple contracts for each employee.",
+                            "I can upload training data and fine-tune agent models for domain-specific tasks.",
                     },
                     {
-                        role: "HR Admin",
+                        role: "ML Engineer",
                         story:
-                            "I can set key contract dates (start, end, probation end) which trigger automated alerts.",
+                            "I can set evaluation benchmarks and track model accuracy over training iterations.",
                     },
                 ],
             },
             {
-                groupName: "Onboarding & Offboarding Checklists",
+                groupName: "Deployment & Monitoring",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "AI Engineer",
                         story:
-                            "I can create customizable onboarding and offboarding checklist templates.",
+                            "I can deploy agents to production with one-click and monitor their real-time performance.",
                     },
                     {
-                        role: "Manager",
+                        role: "Operations Lead",
                         story:
-                            "I can assign a checklist to a new hire and track the completion of tasks.",
+                            "I can view dashboards showing agent response times, accuracy, and error rates.",
                     },
                 ],
             },
@@ -92,9 +92,9 @@ export const modules: Module[] = [
                 groupName: "Alerts & Notifications",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "AI Engineer",
                         story:
-                            "I want to receive an email and in-app notification 30 days before a contract or probation period ends.",
+                            "I want to receive an alert when an agent's accuracy drops below a defined threshold.",
                     },
                 ],
             },
@@ -103,32 +103,32 @@ export const modules: Module[] = [
         category: "functional",
     },
     {
-        slug: "document-management",
+        slug: "knowledge-vault",
         moduleNumber: 2,
-        title: "Document Management (HR Vault)",
-        shortTitle: "HR Vault",
+        title: "Knowledge Vault (AI Knowledge Base)",
+        shortTitle: "Knowledge Vault",
         objective:
-            "To provide a secure, permission-based repository for all HR-related documents.",
+            "To provide a secure, AI-powered repository for organizing and retrieving enterprise knowledge using vector search and semantic indexing.",
         description:
-            "Secure, permission-based document repository with categorization, role-based access control, and automated expiration alerts for work permits and certifications.",
+            "Intelligent document ingestion with auto-tagging, semantic search powered by embeddings, role-based access control, and automated knowledge graph generation.",
         features: [
-            "Secure Document Upload & Storage",
-            "Document Categorization",
+            "Intelligent Document Ingestion & Auto-Tagging",
+            "Semantic Search (Vector Embeddings)",
             "Role-Based Access Control (RBAC)",
-            "Document Expiration Alerts (e.g., for work permits)",
+            "Knowledge Graph Visualization",
         ],
         featureGroups: [
             {
-                groupName: "Secure Upload & Categorization",
+                groupName: "Document Ingestion & Indexing",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "Data Engineer",
                         story:
-                            "I can upload documents (PDF, DOCX, JPG) and categorize them.",
+                            "I can upload documents (PDF, DOCX, TXT, HTML) and they are automatically indexed with AI-generated tags.",
                     },
                     {
-                        role: "Employee",
-                        story: "I can upload documents requested by HR.",
+                        role: "Business User",
+                        story: "I can search knowledge using natural language queries.",
                     },
                 ],
             },
@@ -136,18 +136,18 @@ export const modules: Module[] = [
                 groupName: "Role-Based Access Control (RBAC)",
                 stories: [
                     {
-                        role: "HR Admin",
-                        story: "I can set permissions for each document category.",
+                        role: "Admin",
+                        story: "I can set permissions for each knowledge category and document.",
                     },
                     {
-                        role: "Manager",
+                        role: "Team Lead",
                         story:
-                            "I can view the documents of my direct reports that HR has granted me access to.",
+                            "I can access knowledge bases relevant to my team's domain.",
                     },
                     {
-                        role: "Employee",
+                        role: "User",
                         story:
-                            "I can only access documents within my own personal vault.",
+                            "I can only access documents within my authorized knowledge spaces.",
                     },
                 ],
             },
@@ -156,63 +156,63 @@ export const modules: Module[] = [
         category: "functional",
     },
     {
-        slug: "leave-management",
+        slug: "workflow-automator",
         moduleNumber: 3,
-        title: "Leave & Absence Management",
-        shortTitle: "Leave Management",
+        title: "Workflow Automator",
+        shortTitle: "Workflows",
         objective:
-            "To streamline and automate the entire leave request and approval process.",
+            "To automate complex business processes using AI-driven decision-making and intelligent routing.",
         description:
-            "Customizable leave policies, automated accruals, multi-step approval workflows, shared team calendars, and real-time leave balance reporting.",
+            "Visual workflow builder, conditional branching with AI decisions, event-triggered automations, parallel execution paths, and comprehensive audit logging.",
         features: [
-            "Customizable Leave Policies & Types",
-            "Automated Leave Accrual",
-            "Multi-Step Approval Workflow",
-            "Shared Team Calendar",
-            "Leave Balance Reporting",
+            "Visual Workflow Builder",
+            "AI-Powered Conditional Branching",
+            "Event-Triggered Automations",
+            "Parallel Execution Paths",
+            "Comprehensive Audit Logging",
         ],
         featureGroups: [
             {
-                groupName: "Leave Policy Configuration",
+                groupName: "Workflow Design",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "Operations Lead",
                         story:
-                            "I can configure different leave types and set the annual entitlement.",
+                            "I can design multi-step workflows with conditional AI decision points.",
                     },
                 ],
             },
             {
-                groupName: "Request & Approval Workflow",
+                groupName: "Trigger & Execution",
                 stories: [
                     {
-                        role: "Employee",
+                        role: "Business User",
                         story:
-                            "I can submit a leave request and view my remaining balance.",
+                            "I can trigger a workflow manually or set it to run on a schedule or event.",
                     },
                     {
-                        role: "Manager",
+                        role: "Admin",
                         story:
-                            "I will receive a notification for a new leave request and can approve or reject it.",
+                            "I will receive a notification when a workflow fails and can view the error log.",
                     },
                     {
-                        role: "HR Admin",
-                        story: "I can override or approve any leave request.",
+                        role: "Operations Lead",
+                        story: "I can approve or override AI decisions at designated checkpoints.",
                     },
                 ],
             },
             {
-                groupName: "Shared Calendar View",
+                groupName: "Monitoring & Logs",
                 stories: [
                     {
-                        role: "Manager",
+                        role: "Admin",
                         story:
-                            "I can see a calendar view of my team's approved absences.",
+                            "I can see a timeline view of all workflow executions and their statuses.",
                     },
                     {
-                        role: "Employee",
+                        role: "Business User",
                         story:
-                            "I can see a calendar showing the absences of my immediate team members.",
+                            "I can view a log of all automations that affected my tasks.",
                     },
                 ],
             },
@@ -221,63 +221,63 @@ export const modules: Module[] = [
         category: "functional",
     },
     {
-        slug: "employee-self-service",
+        slug: "insights-dashboard",
         moduleNumber: 4,
-        title: "Employee Self-Service (ESS) Portal",
-        shortTitle: "Self-Service Portal",
+        title: "Insights Dashboard (Self-Service Analytics)",
+        shortTitle: "Insights Dashboard",
         objective:
-            "To empower employees with direct access to their HR information, reducing administrative overhead.",
+            "To empower teams with real-time, AI-generated insights from their data without requiring data science expertise.",
         description:
-            "Personalized dashboards, profile management with approval workflows, payslip access, company directory, and visual organization charts.",
+            "Personalized AI dashboards, natural language querying, automated anomaly detection, visual data explorer, and one-click report generation.",
         features: [
-            "Personalized Dashboard",
-            "Profile Information Management (with approval)",
-            "Payslip Access & History",
-            "Company Directory",
-            "Visual Organization Chart",
+            "Personalized AI Dashboards",
+            "Natural Language Data Querying",
+            "Automated Anomaly Detection",
+            "Visual Data Explorer",
+            "One-Click Report Generation",
         ],
         featureGroups: [
             {
-                groupName: "Personal Dashboard",
+                groupName: "Dashboard & Visualization",
                 stories: [
                     {
-                        role: "Employee",
+                        role: "Business User",
                         story:
-                            "I can see a dashboard with my upcoming leave, pending requests, and recent payslips.",
+                            "I can see a personalized dashboard with key metrics, AI-generated insights, and anomaly alerts.",
                     },
                 ],
             },
             {
-                groupName: "Profile Updates",
+                groupName: "Natural Language Queries",
                 stories: [
                     {
-                        role: "Employee",
+                        role: "Business User",
                         story:
-                            "I can submit a request to update my personal information, which goes to HR for approval.",
+                            "I can ask questions about my data in plain English and get instant visual answers.",
                     },
                 ],
             },
             {
-                groupName: "Payslip Access",
+                groupName: "Report Generation",
                 stories: [
                     {
-                        role: "HR Admin",
-                        story: "I can upload monthly payslips.",
+                        role: "Admin",
+                        story: "I can generate and schedule automated reports.",
                     },
                     {
-                        role: "Employee",
+                        role: "Business User",
                         story:
-                            "I can view and download my payslips from my personal dashboard.",
+                            "I can export dashboard views as PDF or CSV reports.",
                     },
                 ],
             },
             {
-                groupName: "Company Directory & Org Chart",
+                groupName: "Data Explorer",
                 stories: [
                     {
-                        role: "Employee",
+                        role: "Data Analyst",
                         story:
-                            "I can view a company directory and a visual organization chart.",
+                            "I can explore datasets with interactive charts and drill-down capabilities.",
                     },
                 ],
             },
@@ -286,50 +286,50 @@ export const modules: Module[] = [
         category: "functional",
     },
     {
-        slug: "performance-management",
+        slug: "predictive-analytics",
         moduleNumber: 5,
-        title: "Performance Management",
-        shortTitle: "Performance",
+        title: "Predictive Analytics Engine",
+        shortTitle: "Predictive Analytics",
         objective:
-            "To structure and track employee performance through goals and reviews.",
+            "To leverage machine learning for forecasting trends, identifying patterns, and enabling data-driven decision making.",
         description:
-            "Goal setting & tracking with OKRs/KPIs, cascading goals from company to individual, performance review cycles, and self-assessment forms.",
+            "Time series forecasting, churn prediction, demand planning, what-if scenario modeling, and automated model retraining pipelines.",
         features: [
-            "Goal Setting & Tracking (OKRs/KPIs)",
-            "Cascading Goals (Company → Team → Individual)",
-            "Performance Review Cycle Management",
-            "360-Degree Feedback (Optional)",
-            "Self-Assessment Forms",
+            "Time Series Forecasting",
+            "Churn & Risk Prediction",
+            "Demand Planning & Optimization",
+            "What-If Scenario Modeling",
+            "Automated Model Retraining",
         ],
         featureGroups: [
             {
-                groupName: "Goal Setting",
+                groupName: "Forecasting",
                 stories: [
                     {
-                        role: "Manager",
-                        story: "I can set and assign goals for my direct reports.",
+                        role: "Data Scientist",
+                        story: "I can build and deploy time series forecasting models.",
                     },
                     {
-                        role: "Employee",
-                        story: "I can view my goals and track my progress.",
+                        role: "Business User",
+                        story: "I can view AI-generated forecasts and trend predictions.",
                     },
                 ],
             },
             {
-                groupName: "Performance Reviews",
+                groupName: "Scenario Modeling",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "Operations Lead",
                         story:
-                            "I can create and schedule performance review cycles.",
+                            "I can run what-if scenarios to evaluate different business strategies.",
                     },
                     {
-                        role: "Manager",
-                        story: "I can complete review forms for my team.",
+                        role: "Data Scientist",
+                        story: "I can compare model accuracy across different approaches.",
                     },
                     {
-                        role: "Employee",
-                        story: "I can provide a self-assessment.",
+                        role: "Business User",
+                        story: "I can view predictions with confidence intervals.",
                     },
                 ],
             },
@@ -338,39 +338,39 @@ export const modules: Module[] = [
         category: "functional",
     },
     {
-        slug: "expense-management",
+        slug: "data-pipeline-manager",
         moduleNumber: 6,
-        title: "Expense Management",
-        shortTitle: "Expenses",
+        title: "Data Pipeline Manager",
+        shortTitle: "Data Pipelines",
         objective:
-            "To simplify the process of submitting, approving, and tracking employee expenses.",
+            "To simplify the process of ingesting, transforming, and routing data across systems with AI-assisted ETL.",
         description:
-            "Streamlined expense claim submission with digital receipt upload, customizable expense categories, and multi-level approval workflows with analytics.",
+            "Visual pipeline builder, 100+ pre-built connectors, AI-assisted data transformation, real-time streaming support, and comprehensive data quality monitoring.",
         features: [
-            "Expense Claim Submission",
-            "Digital Receipt Upload (OCR is a future goal)",
-            "Customizable Expense Categories",
-            "Multi-Level Approval Workflow",
-            "Expense Reporting & Analytics",
+            "Visual Pipeline Builder",
+            "100+ Pre-Built Data Connectors",
+            "AI-Assisted Data Transformation",
+            "Real-Time Streaming Support",
+            "Data Quality Monitoring & Alerts",
         ],
         featureGroups: [
             {
-                groupName: "Expense Submission",
+                groupName: "Pipeline Design",
                 stories: [
                     {
-                        role: "Employee",
+                        role: "Data Engineer",
                         story:
-                            "I can submit an expense claim, attach a digital receipt, and assign it to a category.",
+                            "I can build data pipelines visually and connect to 100+ data sources.",
                     },
                 ],
             },
             {
-                groupName: "Approval Workflow",
+                groupName: "Monitoring & Alerts",
                 stories: [
                     {
-                        role: "Manager",
+                        role: "Data Engineer",
                         story:
-                            "I can review, approve, or reject expense claims submitted by my team.",
+                            "I can monitor pipeline health, throughput, and receive alerts on failures or data quality issues.",
                     },
                 ],
             },
@@ -379,49 +379,49 @@ export const modules: Module[] = [
         category: "functional",
     },
     {
-        slug: "payroll-management",
+        slug: "model-training-studio",
         moduleNumber: 7,
-        title: "Payroll Management",
-        shortTitle: "Payroll",
+        title: "Model Training Studio",
+        shortTitle: "Model Studio",
         objective:
-            "To automate payroll processing, including salary calculations, deductions, and payslip generation.",
+            "To provide a comprehensive environment for training, evaluating, and deploying machine learning models at scale.",
         description:
-            "Automated payroll runs with salary structure configuration, tax and deduction management, payslip generation, distribution, and compliance reporting.",
+            "Experiment tracking, hyperparameter optimization, distributed training, model versioning, A/B testing, and one-click deployment to production endpoints.",
         features: [
-            "Salary Structure Configuration",
-            "Automated Payroll Run",
-            "Tax and Deduction Management",
-            "Payslip Generation and Distribution",
-            "Payroll Reporting and Compliance",
+            "Experiment Tracking & Comparison",
+            "Automated Hyperparameter Optimization",
+            "Distributed Training Support",
+            "Model Versioning & Registry",
+            "One-Click Deployment & A/B Testing",
         ],
         featureGroups: [
             {
-                groupName: "Salary Configuration",
+                groupName: "Training Configuration",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "ML Engineer",
                         story:
-                            "I can configure salary components (basic salary, allowances, deductions).",
+                            "I can configure training jobs with custom datasets, hyperparameters, and compute resources.",
                     },
                 ],
             },
             {
-                groupName: "Payroll Run",
+                groupName: "Training & Evaluation",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "ML Engineer",
                         story:
-                            "I can run monthly payroll, which automatically calculates net salary based on attendance, leaves, and deductions, and generate compliance reports.",
+                            "I can run training experiments, track metrics in real-time, and compare results across runs.",
                     },
                 ],
             },
             {
-                groupName: "Payslip Generation",
+                groupName: "Deployment",
                 stories: [
                     {
                         role: "System",
                         story:
-                            "Payslips are automatically generated, distributed, and uploaded to each employee's secure vault.",
+                            "Models are automatically versioned, registered, and deployed to scalable production endpoints.",
                     },
                 ],
             },
@@ -430,49 +430,49 @@ export const modules: Module[] = [
         category: "functional",
     },
     {
-        slug: "admin-module",
+        slug: "admin-console",
         moduleNumber: 8,
-        title: "Admin Module (For Client Company)",
-        shortTitle: "Admin Panel",
+        title: "Admin Console (For Client Organization)",
+        shortTitle: "Admin Console",
         objective:
-            "To provide the client's HR/Admin team with the tools to manage their company's instance of the platform.",
+            "To provide the client's admin team with the tools to manage their organization's instance of the AI platform.",
         description:
-            "User & role management, company profile customization, workflow & template customization, data import/export tools, and audit logs.",
+            "User & role management, organization profile customization, API key management, usage quotas, and comprehensive audit logs.",
         features: [
             "User & Role Management",
-            "Company Profile Customization (logo, departments, holidays)",
-            "Workflow & Template Customization",
-            "Data Import/Export Tools",
-            "Audit Logs",
+            "Organization Profile Customization",
+            "API Key & Integration Management",
+            "Usage Quotas & Rate Limiting",
+            "Audit Logs & Activity Tracking",
         ],
         featureGroups: [
             {
                 groupName: "User Management",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "Admin",
                         story:
-                            "I can invite new employees, assign roles, and deactivate users.",
+                            "I can invite new team members, assign roles, and deactivate users.",
                     },
                 ],
             },
             {
-                groupName: "Company Settings",
+                groupName: "Organization Settings",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "Admin",
                         story:
-                            "I can customize the platform with our company logo, define departments, and set company-wide holidays.",
+                            "I can customize the platform with our organization's branding, manage API keys, and configure integrations.",
                     },
                 ],
             },
             {
-                groupName: "Workflow Customization",
+                groupName: "Usage & Governance",
                 stories: [
                     {
-                        role: "HR Admin",
+                        role: "Admin",
                         story:
-                            "I can customize approval workflows and edit email notification templates.",
+                            "I can set usage quotas, monitor API consumption, and review audit logs for compliance.",
                     },
                 ],
             },
@@ -483,10 +483,10 @@ export const modules: Module[] = [
     {
         slug: "super-admin",
         moduleNumber: 9,
-        title: "Super Admin Module (For Socle RH)",
+        title: "Super Admin Module (For NeuralOps)",
         shortTitle: "Super Admin",
         objective:
-            "To give Socle RH complete control over the SaaS platform, its clients, and subscriptions.",
+            "To give NeuralOps complete control over the SaaS platform, its clients, and subscriptions.",
         description:
             "Client account management, subscription plan & billing integration, platform-wide analytics, feature flagging per plan, and system announcements.",
         features: [
@@ -503,7 +503,7 @@ export const modules: Module[] = [
                     {
                         role: "Super Admin",
                         story:
-                            "I can create a new, isolated instance for a new client company.",
+                            "I can create a new, isolated instance for a new client organization.",
                     },
                 ],
             },
@@ -523,7 +523,7 @@ export const modules: Module[] = [
                     {
                         role: "Super Admin",
                         story:
-                            "I can view a dashboard with platform-wide metrics (active clients, total users, revenue).",
+                            "I can view a dashboard with platform-wide metrics (active clients, total users, revenue, compute usage).",
                     },
                 ],
             },

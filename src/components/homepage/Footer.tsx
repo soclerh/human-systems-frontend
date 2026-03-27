@@ -29,12 +29,12 @@ const Footer = () => {
   ];
 
   const moduleLinks = [
-    { name: "Core HR", href: "/modules/core-hr" },
-    { name: "Leave Management", href: "/modules/leave-management" },
-    { name: "Document Management", href: "/modules/document-management" },
-    { name: "Performance", href: "/modules/performance-management" },
-    { name: "Payroll", href: "/modules/payroll-management" },
-    { name: "Expense", href: "/modules/expense-management" },
+    { name: "AI Agents", href: "/modules/ai-agent-builder" },
+    { name: "Workflows", href: "/modules/workflow-automator" },
+    { name: "Knowledge Vault", href: "/modules/knowledge-vault" },
+    { name: "Predictive Analytics", href: "/modules/predictive-analytics" },
+    { name: "Model Studio", href: "/modules/model-training-studio" },
+    { name: "Data Pipelines", href: "/modules/data-pipeline-manager" },
   ];
 
   return (
@@ -50,7 +50,7 @@ const Footer = () => {
             <Link href="/">
               <Image
                 src="/logo-7.svg"
-                alt="Human Systems Logo"
+                alt="NeuralOps Logo"
                 width={180}
                 height={40}
                 className="w-32 sm:w-40 mb-10 mt-3"
@@ -58,7 +58,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-emerald-100/50 leading-relaxed text-sm max-w-xs">
-              Empowering businesses with a scalable, secure, and modular HR platform — from employee management to payroll and beyond.
+              Empowering businesses with a scalable, secure, and modular AI platform — from intelligent agents and workflow automation to predictive analytics and beyond.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (
@@ -97,7 +97,7 @@ const Footer = () => {
           {/* Column 3: Modules */}
           <div>
             <h4 className="text-xs font-black uppercase tracking-[0.2em] text-[#E3FFCD] mb-8">
-              Modules
+              Products
             </h4>
             <ul className="space-y-4">
               {moduleLinks.map((link) => (
@@ -137,10 +137,10 @@ const Footer = () => {
                 </div>
                 <div>
                   <a
-                    href="mailto:contact@humansystems.io"
+                    href="mailto:contact@neuralops.ai"
                     className="text-sm text-emerald-100/70 hover:text-[#E3FFCD] transition-colors"
                   >
-                    contact@humansystems.io
+                    contact@neuralops.ai
                   </a>
                 </div>
               </div>
@@ -165,7 +165,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="border-t border-emerald-800/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-emerald-100/30 text-xs">
-            © {currentYear} Human Systems. All rights reserved.
+            © {currentYear} NeuralOps. All rights reserved.
           </p>
           <div className="flex gap-8">
             <a
@@ -184,7 +184,7 @@ const Footer = () => {
               href="#"
               className="text-emerald-100/30 hover:text-[#E3FFCD] text-xs transition-colors"
             >
-              GDPR Compliance
+              AI Governance
             </a>
           </div>
         </div>

@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!module) return { title: "Module Not Found" };
 
   return {
-    title: `${module.title} — Socle RH | Human Systems`,
+    title: `${module.title} \u2014 NeuralOps`,
     description: module.objective,
   };
 }

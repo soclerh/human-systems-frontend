@@ -9,8 +9,8 @@ const ModulesCtaSection = () => (
                 Ready to get started?
             </h2>
             <p className="text-white/60 text-lg max-w-xl mx-auto mb-10 relative z-10">
-                See how Socle RH can transform your HR operations with our
-                comprehensive suite of modules.
+                See how NeuralOps can transform your AI operations with our
+                comprehensive suite of products.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                 <Link href="/contact">

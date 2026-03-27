@@ -67,8 +67,8 @@ export default function ModuleDetailCta({ module }: { module: Module }) {
                         Interested in {module.shortTitle}?
                     </h2>
                     <p className="text-[#013228]/60 text-lg max-w-lg mx-auto mb-8 relative z-10">
-                        Get a personalized demo and see how this module integrates with the
-                        rest of the Socle RH platform.
+                        Get a personalized demo and see how this product integrates with the
+                        rest of the NeuralOps platform.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                         <Link href="/contact">
@@ -79,7 +79,7 @@ export default function ModuleDetailCta({ module }: { module: Module }) {
                         </Link>
                         <Link href="/modules">
                             <button className="w-full sm:w-auto border-2 border-[#013228] text-[#013228] px-10 py-4 rounded-2xl font-bold text-lg hover:bg-[#013228] hover:text-[#E3FFCD] transition-all">
-                                View All Modules
+                                View All Products
                             </button>
                         </Link>
                     </div>

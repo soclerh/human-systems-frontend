@@ -4,8 +4,8 @@ import ResourceCard from "@/components/resources/ResourceCard";
 import { getResourcesByCategory } from "@/data/resources";
 
 export const metadata = {
-  title: "Use Cases | Human Systems",
-  description: "Explore how our customers use Human Systems.",
+  title: "Use Cases | NeuralOps",
+  description: "Explore how our customers use NeuralOps.",
 };
 
 export default function UseCasesPage() {
@@ -34,8 +34,8 @@ export default function UseCasesPage() {
               Use <span className="text-gray-900">Cases</span>
             </h1>
             <p className="text-lg text-gray-500 font-medium leading-relaxed">
-              Real world examples of how companies are transforming their HR
-              processes with Human Systems.
+              Real world examples of how companies are transforming their AI
+              operations with NeuralOps.
             </p>
           </div>
         </div>

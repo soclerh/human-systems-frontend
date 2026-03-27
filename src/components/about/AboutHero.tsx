@@ -25,13 +25,13 @@ const AboutHero = () => (
 
       <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000">
         Redefining the <br />
-        <span className="text-[#013228]">Employee Experience.</span>
+        <span className="text-[#013228]">AI Experience.</span>
       </h1>
 
       <p className="max-w-2xl mx-auto text-lg text-gray-700 font-medium leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000">
-        Human Systems was founded on a simple belief: HR technology should
-        empower people, not complicate processes. We build tools that make work
-        better for everyone.
+        NeuralOps was founded on a simple belief: AI technology should
+        empower teams, not complicate processes. We build tools that make
+        intelligent automation accessible to everyone.
       </p>
     </div>
 

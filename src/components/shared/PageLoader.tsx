@@ -31,7 +31,7 @@ export default function PageLoader() {
                 <div className="absolute w-10 h-10 border-4 border-gray-200 border-b-[#85D036] border-l-[#85D036] rounded-full animate-[spin_1s_linear_reverse]"></div>
             </div>
             <p className="mt-6 text-sm font-semibold tracking-widest text-[#013228] uppercase animate-pulse">
-                Human Systems
+                NeuralOps
             </p>
         </div>
     );
