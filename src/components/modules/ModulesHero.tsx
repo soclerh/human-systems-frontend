@@ -19,7 +19,7 @@ const ModulesHero = () => (
     <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
       <div className="w-fit mx-auto px-4 py-1 border border-gray-900 rounded-full mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700 backdrop-blur-md">
         <p className="text-sm font-semibold uppercase tracking-widest text-gray-900">
-          Platform Modules
+          AI Products
         </p>
       </div>
 
@@ -29,8 +29,8 @@ const ModulesHero = () => (
       </h1>
 
       <p className="max-w-2xl mx-auto text-lg text-gray-700 font-medium leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000">
-        From Core HR to Payroll — 9 powerful modules designed to streamline
-        every aspect of your human resource operations with enterprise-grade
+        From AI Agents to Model Training — 9 powerful products designed to streamline
+        every aspect of your AI operations with enterprise-grade
         security and multi-tenant architecture.
       </p>
     </div>

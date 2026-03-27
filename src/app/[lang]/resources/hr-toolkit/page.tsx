@@ -4,12 +4,12 @@ import ResourceCard from "@/components/resources/ResourceCard";
 import { getResourcesByCategory } from "@/data/resources";
 
 export const metadata = {
-  title: "HR Toolkit | Human Systems",
-  description: "Explore our HR Toolkit.",
+  title: "AI Toolkit | NeuralOps",
+  description: "Explore our AI Toolkit.",
 };
 
 export default function HRToolkitPage() {
-  const toolkitItems = getResourcesByCategory("HR Toolkit");
+  const toolkitItems = getResourcesByCategory("AI Toolkit");
 
   return (
     <main className="min-h-screen bg-[#FAFAFA] text-[#1A1A1A] selection:bg-emerald-100 pb-24">
@@ -31,10 +31,10 @@ export default function HRToolkitPage() {
               Resources
             </span>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#013228]">
-              HR <span className="text-gray-900">Toolkit</span>
+              AI <span className="text-gray-900">Toolkit</span>
             </h1>
             <p className="text-lg text-gray-500 font-medium leading-relaxed">
-              Templates, guides, and practical tools to elevate your people
+              Templates, guides, and practical tools to accelerate your AI
               operations.
             </p>
           </div>

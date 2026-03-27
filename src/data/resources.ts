@@ -3,81 +3,81 @@ export interface ResourceItem {
     title: string;
     slug: string;
     excerpt: string;
-    category: "HR Toolkit" | "Use Cases" | "Compliance";
+    category: "AI Toolkit" | "Use Cases" | "Ethics & Governance";
     date: string;
     readTime: string;
     content: string;
 }
 
 export const resources: ResourceItem[] = [
-    // HR Toolkit
+    // AI Toolkit
     {
         id: "tk1",
-        title: "The Ultimate Guide to Employee Onboarding",
-        slug: "ultimate-onboarding-guide",
-        excerpt: "Discover best practices and templates for welcoming new hires to your organization.",
-        category: "HR Toolkit",
+        title: "The Ultimate Guide to Deploying AI Agents",
+        slug: "ultimate-ai-agent-deployment-guide",
+        excerpt: "Discover best practices and frameworks for deploying AI agents in production environments.",
+        category: "AI Toolkit",
         date: "Mar 10, 2026",
         readTime: "7 min read",
-        content: "### Introduction\nOnboarding is the critical first step in an employee's journey. A strong onboarding process can improve new hire retention by 82%.\n\n### Best Practices\n1. Start before Day 1: Send a welcome kit and necessary paperwork ahead of time.\n2. Assign a Buddy: Pair new hires with experienced team members for guidance.\n3. Setup 30-60-90 Day Plans: Set clear expectations early on.\n\n### Conclusion\nInvesting in a solid onboarding process pays dividends in employee engagement and long-term success."
+        content: "### Introduction\nDeploying AI agents in production is the critical step that separates POCs from real business impact. A well-structured deployment strategy can reduce time-to-value by 60%.\n\n### Best Practices\n1. Start with Guardrails: Define clear boundaries for agent autonomy before deployment.\n2. Implement Human-in-the-Loop: Set up approval checkpoints for high-stakes decisions.\n3. Monitor Continuously: Track agent accuracy, latency, and error rates from day one.\n\n### Conclusion\nInvesting in a robust deployment pipeline ensures your AI agents deliver consistent, reliable value at scale."
     },
     {
         id: "tk2",
-        title: "10 Essential Interview Questions for 2026",
-        slug: "essential-interview-questions-2026",
-        excerpt: "A curated list of behavioral and situational questions to find top tier talent.",
-        category: "HR Toolkit",
+        title: "10 Essential Prompting Patterns for AI Engineers",
+        slug: "essential-prompting-patterns-2026",
+        excerpt: "A curated list of advanced prompting techniques to maximize AI agent performance.",
+        category: "AI Toolkit",
         date: "Feb 28, 2026",
         readTime: "5 min read",
-        content: "### Moving Beyond the Resume\nModern hiring requires evaluating more than just technical skills. Cultural fit, adaptability, and emotional intelligence are paramount.\n\n### Top Questions\n1. Tell me about a time you had to unlearn something to solve a problem.\n2. How do you handle situations where the project scope changes drastically?\n3. Describe a time you strongly disagreed with a manager. How did you handle it?\n\n### The Takeaway\nUse these questions to uncover the true potential of your candidates."
+        content: "### Beyond Basic Prompting\nModern AI engineering requires sophisticated prompting strategies. Chain-of-thought, few-shot learning, and structured output formatting are just the beginning.\n\n### Top Patterns\n1. ReAct (Reasoning + Acting): Combine reasoning traces with tool-calling actions.\n2. Tree of Thoughts: Explore multiple reasoning paths before committing to an answer.\n3. Self-Reflection: Have the model critique and improve its own output iteratively.\n\n### The Takeaway\nMastering these patterns transforms AI from a basic Q&A tool into a powerful reasoning engine."
     },
 
     // Use Cases
     {
         id: "uc1",
-        title: "How TechNova Reduced Turnover by 30%",
-        slug: "technova-reduced-turnover",
-        excerpt: "Learn how a mid-sized software company used Human Systems to improve retention.",
+        title: "How DataForge Cut Analysis Time by 70%",
+        slug: "dataforge-cut-analysis-time",
+        excerpt: "Learn how a mid-sized analytics company used NeuralOps to automate their data pipeline.",
         category: "Use Cases",
         date: "Mar 05, 2026",
         readTime: "6 min read",
-        content: "### The Challenge\nTechNova was experiencing a 25% annual turnover rate, costing them millions in recruiting and lost productivity.\n\n### The Solution\nBy implementing the Human Systems Employee Self-Service and Performance Management modules, TechNova gave their employees a voice and clear growth paths.\n\n### The Results\nWithin 12 months, turnover plummeted by 30%. Employee satisfaction scores rose from 68 to 89 out of 100."
+        content: "### The Challenge\nDataForge was spending 40+ hours per week on manual data cleaning and transformation, slowing down their entire analytics operation.\n\n### The Solution\nBy implementing the NeuralOps Data Pipeline Manager and Predictive Analytics modules, DataForge automated 90% of their ETL workflows and deployed real-time anomaly detection.\n\n### The Results\nWithin 6 months, analysis turnaround time dropped by 70%. Data quality scores improved from 78% to 97%, and the team redirected 30 hours/week to strategic analysis."
     },
     {
         id: "uc2",
-        title: "Automating Payroll for 5,000 Global Employees",
-        slug: "automating-global-payroll",
-        excerpt: "A deep dive into GlobalCorp's transition to an automated payroll system.",
+        title: "Deploying 50+ AI Agents Across a Global Enterprise",
+        slug: "deploying-ai-agents-globally",
+        excerpt: "A deep dive into MegaCorp's journey to enterprise-wide AI agent deployment.",
         category: "Use Cases",
         date: "Jan 15, 2026",
         readTime: "8 min read",
-        content: "### The Nightmare of Manual Payroll\nManaging payroll across 14 countries manually was an HR nightmare for GlobalCorp. Errors were frequent, and processing took two weeks every month.\n\n### Enter Automation\nHuman Systems provided a unified platform that automatically handled currency exchange, local taxes, and compliance.\n\n### The Impact\nPayroll processing time was reduced from 14 days to just 2 days. Accuracy improved to 99.9%."
+        content: "### The Complexity of Scale\nManaging AI agents across 14 departments and 8 time zones was a coordination nightmare for MegaCorp. Inconsistent model versions and siloed knowledge bases led to unreliable results.\n\n### Enter NeuralOps\nNeuralOps provided a unified platform for agent orchestration, centralized model versioning, and a shared knowledge vault accessible across the organization.\n\n### The Impact\nAgent deployment time was reduced from 3 weeks to 2 days. Consistency improved to 99.2% across all departments, and operational costs dropped by 45%."
     },
 
-    // Compliance
+    // Ethics & Governance
     {
         id: "cp1",
-        title: "2026 Guide to EU Labor Laws Updates",
-        slug: "eu-labor-laws-2026",
-        excerpt: "Stay ahead of the curve with our comprehensive guide to new European labor regulations.",
-        category: "Compliance",
+        title: "2026 Guide to AI Regulation Updates",
+        slug: "ai-regulation-2026",
+        excerpt: "Stay ahead of the curve with our comprehensive guide to new global AI governance frameworks.",
+        category: "Ethics & Governance",
         date: "Mar 12, 2026",
         readTime: "10 min read",
-        content: "### Key Changes in 2026\nThe European Union has introduced sweeping changes aimed at protecting remote workers and standardizing gig economy benefits.\n\n### What You Need to Know\n- Remote workers must be given 'right to disconnect' protocols.\n- Gig workers now qualify for proportionate healthcare benefits.\n- Standardized ESG reporting requirements for all companies with over 250 employees.\n\n### Action Items\nReview your current policies and ensure your HR systems are tracking these new compliant data points."
+        content: "### Key Changes in 2026\nThe global regulatory landscape for AI has undergone significant changes, with the EU AI Act fully enforced and the US AI Framework gaining momentum.\n\n### What You Need to Know\n- High-risk AI systems require mandatory risk assessments and human oversight.\n- Generative AI outputs must be transparently labeled and traceable.\n- Organizations must maintain detailed documentation of model training data and decision-making processes.\n\n### Action Items\nReview your current AI governance policies and ensure your systems include proper audit trails, bias testing, and compliance reporting."
     },
     {
         id: "cp2",
-        title: "Data Privacy in HR: Beyond GDPR",
-        slug: "data-privacy-beyond-gdpr",
-        excerpt: "Understand how to handle sensitive employee data globally without risking hefty fines.",
-        category: "Compliance",
+        title: "Data Privacy in AI: Beyond Model Training",
+        slug: "data-privacy-ai-systems",
+        excerpt: "Understand how to handle sensitive data in AI pipelines while complying with global privacy regulations.",
+        category: "Ethics & Governance",
         date: "Feb 10, 2026",
         readTime: "6 min read",
-        content: "### The Stakes Are Higher Than Ever\nMishandling employee data can result in fines up to 4% of your global revenue.\n\n### Best Practices\n1. Data Minimization: Only collect what you absolutely need.\n2. Strict Access Control: Implement role-based access for all HR systems.\n3. Regular Audits: Conduct bi-annual security audits of your HR tech stack.\n\n### Getting Started\nHuman Systems includes built-in compliance checks to ease the burden of data privacy management."
+        content: "### The Stakes Are Higher Than Ever\nUsing personal or sensitive data in AI training without proper consent and safeguards can result in fines up to 4% of global revenue.\n\n### Best Practices\n1. Data Minimization: Only use data that is strictly necessary for model training.\n2. Differential Privacy: Apply noise injection techniques to protect individual records.\n3. Regular Audits: Conduct bi-annual privacy audits of your AI data pipelines.\n\n### Getting Started\nNeuralOps includes built-in privacy safeguards, data lineage tracking, and compliance reporting to ease the burden of AI data governance."
     }
 ];
 
-export const getResourcesByCategory = (category: "HR Toolkit" | "Use Cases" | "Compliance") => {
+export const getResourcesByCategory = (category: "AI Toolkit" | "Use Cases" | "Ethics & Governance") => {
     return resources.filter(res => res.category === category);
 };
 

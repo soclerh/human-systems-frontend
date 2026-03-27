@@ -4,23 +4,23 @@ import { Heart, ShieldCheck, Rocket, Lightbulb } from "lucide-react";
 const ValuesSection = () => {
     const values = [
         {
-            title: "Human First",
-            desc: "We design every feature with the end-user in mind, ensuring accessibility and ease of use.",
+            title: "Responsible AI",
+            desc: "We design every model with fairness, transparency, and accountability at its core.",
             icon: <Heart size={32} />,
         },
         {
-            title: "Security by Design",
-            desc: "Your data is your most valuable asset. We protect it with enterprise-grade encryption.",
+            title: "Privacy by Design",
+            desc: "Your data is your most valuable asset. We protect it with enterprise-grade encryption and strict access controls.",
             icon: <ShieldCheck size={32} />,
         },
         {
-            title: "Constant Innovation",
-            desc: "The world of work is changing rapidly. Our platform evolves daily to meet new challenges.",
+            title: "Relentless Innovation",
+            desc: "AI evolves daily. Our platform stays ahead with cutting-edge research and continuous improvement.",
             icon: <Rocket size={32} />,
         },
         {
             title: "Simplicity Wins",
-            desc: "We believe in removing friction. If it's not intuitive, it doesn't belong in Human Systems.",
+            desc: "We believe in removing friction. If it's not intuitive, it doesn't belong in NeuralOps.",
             icon: <Lightbulb size={32} />,
         },
     ];
@@ -33,8 +33,8 @@ const ValuesSection = () => {
                         Our Core Values
                     </h2>
                     <p className="text-emerald-100/60 max-w-xl mx-auto">
-                        The principles that guide every line of code we write and every
-                        partnership we build.
+                        The principles that guide every algorithm we build and every
+                        partnership we create.
                     </p>
                 </div>
 

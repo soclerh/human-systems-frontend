@@ -9,23 +9,23 @@ import {
 export default function PlatformBenefits() {
   const benefits = [
     {
-      title: "Secure & GDPR Compliant",
-      description: "Enterprise-grade data encryption and role-based access ensure your HR data remains protected and compliant.",
+      title: "Enterprise-Grade AI Security",
+      description: "End-to-end encryption, role-based access, and SOC 2 compliance ensure your AI models and data remain fully protected.",
       icon: <MdOutlineSecurity size={24} />,
     },
     {
-      title: "HR Analytics & Reporting",
-      description: "Real-time dashboards providing deep insights into headcount, turnover trends, and payroll expenses.",
+      title: "AI-Powered Analytics",
+      description: "Real-time dashboards with natural language querying, anomaly detection, and predictive insights across all your data.",
       icon: <MdOutlineAnalytics size={24} />,
     },
     {
-      title: "Workflow Automation",
-      description: "Eliminate manual overhead by automating approvals, payroll runs, and employee onboarding tasks.",
+      title: "Intelligent Automation",
+      description: "Eliminate manual work with AI agents that automate complex workflows, decisions, and multi-step processes.",
       icon: <MdAutoFixHigh size={24} />,
     },
     {
-      title: "Multi-Tenant Architecture",
-      description: "Isolated, customizable instances for every client with independent branding and configuration.",
+      title: "Multi-Tenant AI Infrastructure",
+      description: "Isolated, scalable compute environments for every client with independent model registries and configurations.",
       icon: <MdOutlineLan size={24} />,
     },
   ];
@@ -44,7 +44,7 @@ export default function PlatformBenefits() {
                 <div className="aspect-4/5 relative">
                   <Image
                     src="/2.jpg"
-                    alt="Human Systems Dashboard"
+                    alt="NeuralOps Dashboard"
                     fill
                     className="object-cover"
                   />
@@ -64,11 +64,11 @@ export default function PlatformBenefits() {
                 </span>
               </div>
               <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-[1.1]">
-                Scale your operations with{" "}
+                Scale your AI operations with{" "}
                 <span className="text-[#013228]">confidence.</span>
               </h2>
               <p className="text-lg text-gray-500 leading-relaxed max-w-xl">
-                Built with enterprise-grade security and multi-tenant architecture to power your HR operations at any scale.
+                Built with enterprise-grade security and multi-tenant architecture to power your AI infrastructure at any scale.
               </p>
             </div>
 

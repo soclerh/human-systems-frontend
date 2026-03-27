@@ -5,7 +5,7 @@ const CtaSection = () => (
     <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto bg-[#E3FFCD] rounded-[40px] p-12 lg:p-20 text-center relative overflow-hidden">
             <h2 className="text-4xl lg:text-6xl font-extrabold text-[#013228] mb-8 relative z-10">
-                Ready to humanize your <br /> HR operations?
+                Ready to supercharge your <br /> AI operations?
             </h2>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                 <button className="w-full sm:w-auto bg-[#013228] text-[#E3FFCD] px-10 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2 shadow-xl shadow-[#013228]/10">

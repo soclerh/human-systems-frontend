@@ -153,7 +153,7 @@ export default function ContactForm() {
                 <div>
                   <p className="font-bold text-gray-900 mb-1">Email Us</p>
                   <p className="text-sm text-gray-500">
-                    contact@humansystems.io
+                    contact@neuralops.ai
                   </p>
                 </div>
               </div>

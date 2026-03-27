@@ -3,9 +3,9 @@ import ModuleGrid from "@/components/modules/ModuleGrid";
 import SharedCta from "@/components/shared/SharedCta";
 
 export const metadata = {
-    title: "Modules — Socle RH | Human Systems",
+    title: "Products \u2014 NeuralOps",
     description:
-        "Explore all 9 modules of the Socle RH SaaS platform — from Core HR and Leave Management to Payroll, Performance, and Platform Administration.",
+        "Explore all 9 products of the NeuralOps AI platform \u2014 from AI Agents and Workflow Automation to Predictive Analytics, Model Training, and Platform Administration.",
 };
 
 export default function ModulesPage() {

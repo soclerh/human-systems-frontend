@@ -6,9 +6,9 @@ import BlogCard from "@/components/blog/BlogCard";
 import { getAllBlogs } from "@/data/blogs";
 
 export const metadata = {
-  title: "Blog — Socle RH | Human Systems",
+  title: "Blog — NeuralOps",
   description:
-    "Read our latest insights on HR tech, company culture, and performance management.",
+    "Read our latest insights on AI agents, MLOps, and intelligent automation.",
 };
 
 export default function BlogListingPage() {
@@ -45,12 +45,12 @@ export default function BlogListingPage() {
 
           <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000">
             Insights on <br />
-            <span className="text-[#013228]">Human Systems.</span>
+            <span className="text-[#013228]">NeuralOps.</span>
           </h1>
 
           <p className="max-w-2xl mx-auto text-lg text-gray-700 font-medium leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000">
-            Thought leadership and practical guides for modern HR professionals
-            and cultural architects.
+            Thought leadership and practical guides for AI engineers, data
+            scientists, and technology leaders.
           </p>
         </div>
 

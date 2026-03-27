@@ -13,19 +13,19 @@ export default function EmployeeSelfService() {
             <div className="flex items-center gap-2 mb-6">
               <span className="h-px w-8 bg-[#013228]"></span>
               <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#013228]">
-                Self-Service Portal
+                Insights Dashboard
               </span>
             </div>
 
             <div className="space-y-6">
               <h2 className="text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.05]">
                 Everything your team needs,{" "}
-                <span className="text-[#013228]">in one place.</span>
+                <span className="text-[#013228]">powered by AI.</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                Streamline your HR workflow. Give employees the autonomy to
-                manage their documentation, view benefits, and stay connected
-                with the entire team—zero admin intervention required.
+                Unlock the full potential of your data. Give teams the power to
+                query insights in natural language, detect anomalies in real-time,
+                and generate intelligent reports — zero data science expertise required.
               </p>
             </div>
 
@@ -39,22 +39,22 @@ export default function EmployeeSelfService() {
                   <div className="w-1.5 h-1.5 rounded-full bg-[#E3FFCD]"></div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Unified Profile & Payslips
+                  Natural Language Queries
                 </h3>
                 <p className="text-gray-500 leading-relaxed">
-                  A secure vault for all personal documents. Employees can
-                  instantly download tax forms and payslip history.
+                  Ask questions about your data in plain English. Get instant
+                  visual answers with charts, tables, and AI-generated summaries.
                 </p>
               </div>
 
               <div className="relative pl-12">
                 <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-white border-2 border-gray-300 shadow-sm z-10"></div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Interactive Org Directory
+                  Anomaly Detection & Alerts
                 </h3>
                 <p className="text-gray-500 leading-relaxed">
-                  Visualize your entire team structure. Search by department,
-                  role, or name to find exactly who you're looking for.
+                  AI continuously monitors your metrics and surfaces anomalies
+                  before they become problems — with context and recommendations.
                 </p>
               </div>
             </div>
@@ -62,7 +62,7 @@ export default function EmployeeSelfService() {
             <div className="mt-12">
               <Link href={"/contact"}>
                 <button className="group flex items-center gap-3 border border-[#013228] text-gray-900 px-8 py-4 rounded-full hover:bg-[#013228] cursor-pointer hover:text-white font-bold transition-all">
-                  Start Empowering Your Team
+                  Start Unlocking AI Insights
                   <HiOutlineArrowNarrowRight className="text-xl group-hover:translate-x-1 transition-transform" />
                 </button>
               </Link>
@@ -96,9 +96,9 @@ export default function EmployeeSelfService() {
                   Automated
                 </span>
               </div>
-              <p className="text-xs font-semibold text-gray-900 leading-snug">
-                Employee details sync across all modules.
-              </p>
+               <p className="text-xs font-semibold text-gray-900 leading-snug">
+                AI insights sync across all connected data sources.
+               </p>
             </div>
           </div>
         </div>

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Sora, DM_Sans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/homepage/Footer";
-import { cookies } from "next/headers";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -16,9 +15,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Human Systems - The All-in-One HR SaaS Platform",
+  title: "NeuralOps - The All-in-One AI Operations Platform",
   description:
-    "Human Systems empowers businesses with a scalable, secure, and modular HR platform.",
+    "NeuralOps empowers businesses with a scalable, secure, and modular AI platform.",
   icons: {
     icon: "/favicon2.png", // Point to the PNG instead
   },
@@ -26,12 +25,12 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }>) {
-  const cookieStore = await cookies();
-  const googtrans = cookieStore.get("googtrans")?.value;
-  const lang = googtrans?.split("/").pop() || "en";
+  const { lang } = await params;
   const dir = lang === "ar" ? "rtl" : "ltr";
 
   return (

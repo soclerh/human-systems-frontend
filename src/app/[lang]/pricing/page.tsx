@@ -6,9 +6,9 @@ import SharedCta from "@/components/shared/SharedCta";
 import { staticPricingData } from "@/data/staticPricing";
 
 export const metadata = {
-  title: "Pricing — Socle RH | Human Systems",
+  title: "Pricing — NeuralOps",
   description:
-    "Simple, transparent pricing for businesses of all sizes. Choose from Starter, Professional, or Enterprise plans with multi-tenant security and GDPR compliance.",
+    "Simple, transparent pricing for teams of all sizes. Choose from Starter, Professional, or Enterprise plans with multi-tenant security and SOC 2 compliance.",
 };
 
 export default async function PricingPage() {

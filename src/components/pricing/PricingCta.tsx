@@ -10,7 +10,7 @@ const PricingCta = () => (
             </h2>
             <p className="text-white/60 text-lg max-w-xl mx-auto mb-10 relative z-10">
                 Talk to our team and we&apos;ll help you find the perfect plan for your
-                organization&apos;s needs — no commitment required.
+                organization&apos;s AI needs — no commitment required.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                 <Link href="/contact">
@@ -21,7 +21,7 @@ const PricingCta = () => (
                 </Link>
                 <Link href="/modules">
                     <button className="w-full sm:w-auto border-2 border-[#E3FFCD] text-[#E3FFCD] px-10 py-4 rounded-2xl font-bold text-lg hover:bg-[#E3FFCD] hover:text-[#013228] transition-all">
-                        Explore Modules
+                        Explore Products
                     </button>
                 </Link>
             </div>

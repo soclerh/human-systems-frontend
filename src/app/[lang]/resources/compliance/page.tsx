@@ -4,12 +4,12 @@ import ResourceCard from "@/components/resources/ResourceCard";
 import { getResourcesByCategory } from "@/data/resources";
 
 export const metadata = {
-  title: "Compliance | Human Systems",
-  description: "Stay up to date with HR compliance and labor laws.",
+  title: "Ethics & Governance | NeuralOps",
+  description: "Stay up to date with AI ethics, governance, and regulatory compliance.",
 };
 
 export default function CompliancePage() {
-  const items = getResourcesByCategory("Compliance");
+  const items = getResourcesByCategory("Ethics & Governance");
 
   return (
     <main className="min-h-screen bg-[#FAFAFA] text-[#1A1A1A] selection:bg-emerald-100 pb-24">
@@ -28,14 +28,14 @@ export default function CompliancePage() {
 
           <div className="max-w-3xl">
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold border border-gray-200 rounded-full text-[#013228] uppercase tracking-widest bg-gray-50">
-              Legal & Regulartory
+              AI Governance
             </span>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#013228]">
-              HR <span className="text-gray-900">Compliance</span>
+              Ethics & <span className="text-gray-900">Governance</span>
             </h1>
             <p className="text-lg text-gray-500 font-medium leading-relaxed">
-              Guides and tools to ensure your business stays compliant in a
-              changing world.
+              Guides and frameworks to ensure your AI systems are ethical, fair,
+              and compliant.
             </p>
           </div>
         </div>

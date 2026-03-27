@@ -36,8 +36,8 @@ const PricingHero = () => (
 
       {/* Increased text darkness to text-gray-700 for better contrast on background image */}
       <p className="max-w-2xl mx-auto text-lg text-gray-700 font-medium leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000">
-        Flexible plans tailored for businesses of all sizes — from startups to
-        enterprise. All plans include multi-tenant security and GDPR compliance.
+        Flexible plans tailored for teams of all sizes — from startups to
+        enterprise. All plans include multi-tenant security and SOC 2 compliance.
       </p>
     </div>
 

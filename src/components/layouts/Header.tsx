@@ -56,16 +56,16 @@ export default function Header() {
 
   const navLinks = [
     { name: "About", href: "/about" },
-    { name: "Modules", href: "/modules" },
+    { name: "Products", href: "/modules" },
     { name: "Pricing", href: "/pricing" },
     { name: "Blog", href: "/blog" },
     {
       name: "Resources",
       href: "#",
       dropdown: [
-        { name: "HR Toolkit", href: "/resources/hr-toolkit" },
+        { name: "AI Toolkit", href: "/resources/hr-toolkit" },
         { name: "Use Cases", href: "/resources/use-cases" },
-        { name: "Compliance", href: "/resources/compliance" },
+        { name: "Ethics & Governance", href: "/resources/compliance" },
       ],
     },
     { name: "Contact Us", href: "/contact" },

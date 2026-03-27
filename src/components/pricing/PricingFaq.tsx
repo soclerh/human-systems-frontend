@@ -14,19 +14,19 @@ const faqs = [
     },
     {
         q: "What happens after my contract ends?",
-        a: "After your contract ends, you can choose to renew or your account will transition to a read-only mode. Your data is securely retained for 90 days, giving you time to export.",
+        a: "After your contract ends, you can choose to renew or your account will transition to a read-only mode. Your data and trained models are securely retained for 90 days, giving you time to export.",
     },
     {
-        q: "How does per-employee pricing work?",
-        a: "You're billed based on the number of active employees in your system. Deactivated employees are not counted. Billing is calculated at the start of each month.",
+        q: "How does per-seat pricing work?",
+        a: "You're billed based on the number of active team members in your workspace. Deactivated users are not counted. Billing is calculated at the start of each month.",
     },
     {
-        q: "Is my data secure and GDPR compliant?",
-        a: "Absolutely. All data is encrypted at rest and in transit. We are fully GDPR compliant with data processing agreements, regular backups, and the ability to export or delete data on request.",
+        q: "Is my data secure and compliant?",
+        a: "Absolutely. All data is encrypted at rest and in transit. We are SOC 2 Type II certified with regular security audits, role-based access controls, and the ability to export or delete data on request.",
     },
     {
-        q: "Do you offer post-delivery support?",
-        a: "Yes, we provide 30 days of free bug-fix and adjustment support after MVP delivery. We also offer an Annual Maintenance Contract (AMC) at 20% of the project cost.",
+        q: "Do you offer post-deployment support?",
+        a: "Yes, we provide 30 days of free support after initial deployment. We also offer an Annual Support Contract with dedicated AI solutions architects and priority response times.",
     },
 ];
 

@@ -14,7 +14,7 @@ const ContactHero = () => (
             </h1>
             <p className="max-w-2xl mx-auto text-lg text-gray-500 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000">
                 Have a question, need a demo, or ready to get started? Our team is here
-                to help you transform your HR operations.
+                to help you transform your AI operations.
             </p>
         </div>
 

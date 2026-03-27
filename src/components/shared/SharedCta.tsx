@@ -19,7 +19,7 @@ const SharedCta = () => (
       {/* --- Content --- */}
       <div className="relative z-10">
         <h2 className="text-4xl lg:text-6xl font-extrabold text-[#013228] mb-8 leading-tight">
-          Ready to humanize your <br /> HR operations?
+          Ready to supercharge your <br /> AI operations?
         </h2>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -13,7 +13,7 @@ const StatsSection = () => (
                         500+
                     </p>
                     <p className="text-xs uppercase tracking-[0.2em] font-bold text-gray-400">
-                        Companies
+                        Enterprises
                     </p>
                 </div>
                 <div className="space-y-2">
@@ -21,10 +21,10 @@ const StatsSection = () => (
                         <Zap size={24} />
                     </div>
                     <p className="text-4xl font-extrabold text-[#013228] mb-1">
-                        50k+
+                        10M+
                     </p>
                     <p className="text-xs uppercase tracking-[0.2em] font-bold text-gray-400">
-                        Active Users
+                        AI Predictions/Day
                     </p>
                 </div>
                 <div className="space-y-2">

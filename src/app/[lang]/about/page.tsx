@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, use } from "react";
 import AboutHero from "@/components/about/AboutHero";
 import StorySection from "@/components/about/StorySection";
 import StatsSection from "@/components/about/StatsSection";
@@ -8,7 +8,8 @@ import ValuesSection from "@/components/about/ValuesSection";
 import TeamSection from "@/components/about/TeamSection";
 import SharedCta from "@/components/shared/SharedCta";
 
-export default function App() {
+export default function App({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = use(params);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {

@@ -9,8 +9,8 @@ const ContactCta = () => (
                 Prefer a live walkthrough?
             </h2>
             <p className="text-[#013228]/60 text-lg max-w-lg mx-auto mb-8 relative z-10">
-                Schedule a personalized demo with our team and see how Socle RH can
-                transform your HR operations in action.
+                Schedule a personalized demo with our team and see how NeuralOps can
+                transform your AI operations in action.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                 <button className="w-full sm:w-auto bg-[#013228] text-[#E3FFCD] px-10 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2 shadow-xl shadow-[#013228]/10">
@@ -19,7 +19,7 @@ const ContactCta = () => (
                 </button>
                 <Link href="/modules">
                     <button className="w-full sm:w-auto border-2 border-[#013228] text-[#013228] px-10 py-4 rounded-2xl font-bold text-lg hover:bg-[#013228] hover:text-[#E3FFCD] transition-all">
-                        Explore Modules
+                        Explore Products
                     </button>
                 </Link>
             </div>
