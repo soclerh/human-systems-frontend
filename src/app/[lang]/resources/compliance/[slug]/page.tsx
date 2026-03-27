@@ -11,7 +11,7 @@ export default async function ComplianceDetailPage({
     const { slug } = await params;
     const resource = getResourceBySlug(slug);
 
-    if (!resource || resource.category !== "Compliance") notFound();
+    if (!resource || resource.category !== "Ethics & Governance") notFound();
 
     return (
         <main className="min-h-screen bg-white">
